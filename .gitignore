@@ -1,0 +1,21 @@
+# Local and remote runtime artifacts
+.venv/
+.runtime/
+.dcc/sockets/
+.dcc/ssh_config
+.dcc/environment.json
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+data/
+outputs/
+results/
+logs/
+slurm-*.out
+.cache/
+.env
+.env.*
+*.pem
+*.key
+
