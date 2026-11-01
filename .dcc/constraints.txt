@@ -1,0 +1,5 @@
+# Apply alongside the unchanged requirements.txt in Conda environment RL (Python 3.11).
+# CUDA build tested: torch 2.10.0+cu128 from https://download.pytorch.org/whl/cu128
+torch==2.10.0
+# pandas 3.1 numeric categories break the current sklearn OpenML parser.
+pandas<3.1
