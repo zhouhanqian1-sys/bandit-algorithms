@@ -1,8 +1,10 @@
 {
-  "account": "honglab",
+  "account": "scavenger-h200",
+  "requested_account": "honglab",
+  "requested_account_status": "DCC rejects honglab on scavenger-h200; use the authorized matching account.",
   "partition": "scavenger-h200",
   "gpu_type": "H200",
   "gres": "gpu:h200:1",
   "conda_environment": "RL",
-  "status": "Execution settings; connectivity results are kept in local runtime reports."
+  "status": "SSH, float32/bfloat16 CUDA, and tiny neural-agent checks passed in RL; details are kept in local runtime reports."
 }
