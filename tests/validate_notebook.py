@@ -424,6 +424,17 @@ def check_torch(notebook, np):
     assert len(parameter_addresses) == len(set(parameter_addresses))
     assert all(torch.equal(old, new) for old, new in zip(initial_template, template.parameters()))
 
+    # Exercise the actual shuttle-sized factory and runner without loading shuttle data.
+    factory_agents = namespace['make_neural_agents'](63, 'cpu')
+    factory_environment = LinearBandit(np.ones(63) / np.sqrt(63), 7, 2)
+    factory_results = run_experiment(factory_environment, factory_agents, N=2, T=3, seed=28)
+    assert len(factory_results) == 4
+    for agent in factory_agents:
+        regrets = factory_results[agent.name()]
+        assert regrets.shape == (2, 3)
+        assert np.isfinite(regrets).all() and (regrets >= 0).all()
+        assert agent.t == 3 and len(agent.collector) == 3
+
     class LoggingAgent:
         def __init__(self, label, extra_draws):
             self.label = label
@@ -476,7 +487,7 @@ def check_torch(notebook, np):
     result = run_experiment(uci, [left, right], N=2, T=4, seed=31)
     assert np.array_equal(result[left.name()], result[right.name()])
     assert np.array_equal(np.array(left.contexts), np.array(right.contexts))
-    return 'CPU model/optimizer ownership, dtype conversion, gradients/precision, resets, collector bounds, fair RNG streams and UCI reset'
+    return 'CPU model/optimizer ownership, dtype conversion, gradients/precision, resets, 63-input factory integration, collector bounds, fair RNG streams and UCI reset'
 
 
 def main():
