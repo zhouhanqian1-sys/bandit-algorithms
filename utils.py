@@ -9,6 +9,7 @@ colors = sns.color_palette('colorblind')
 import random
 import matplotlib
 import matplotlib.pyplot as plt
+import torch
 from torch.utils.data import Dataset
 
 
@@ -16,63 +17,81 @@ from torch.utils.data import Dataset
 
 
 
-def play_bandit(environment, agent, N, T):
-    """
-    Play N independent runs of length T for the specified agent.
+def _environment_call(function, seed, *args):
+    """Keep context and reward randomness separate from agent exploration."""
+    numpy_state = np.random.get_state()
+    torch_state = torch.random.get_rng_state()
+    try:
+        np.random.seed(seed)
+        # The supplied environments use NumPy and the CPU DataLoader generator.
+        torch.random.default_generator.manual_seed(seed)
+        return function(*args)
+    finally:
+        np.random.set_state(numpy_state)
+        torch.random.set_rng_state(torch_state)
 
-    :param environment: a linear bandit instance
-    :param agent: a contextual bandit algorithm
-    :param N: number of independent simulations
-    :param T: decision horizon
-    :return: the agent's name, and the collected data in an ndarray
-    """
 
+def play_bandit(environment, agent, N, T, seed=42):
+    """Collect instantaneous pseudo-regret for N independent runs of T rounds."""
+    if N < 1 or T < 1:
+        raise ValueError("N and T must be positive.")
     data = np.zeros((N, T))
+    run_sequences = np.random.SeedSequence(seed).spawn(N)
 
-    for n in range(N):
+    for run_index, run_sequence in enumerate(run_sequences):
+        # Each run gets fresh randomness; algorithms receive matching environment seeds.
+        run_seeds = run_sequence.generate_state(2 * T + 2)
+        agent_seed = int(run_seeds[0])
+        random.seed(agent_seed)
+        np.random.seed(agent_seed)
+        torch.manual_seed(agent_seed)
         agent.reset()
-        for t in range(T):
-            action_set = environment.get_action_set()
+        if hasattr(environment, "reset"):
+            _environment_call(environment.reset, int(run_seeds[1]))
+
+        for round_index in range(T):
+            context_seed = int(run_seeds[2 * round_index + 2])
+            reward_seed = int(run_seeds[2 * round_index + 3])
+            action_set = _environment_call(environment.get_action_set, context_seed)
             action_index, action = agent.get_action(action_set)
-            # Note that, differently from the previous part, now get_action needs to receive the action_set
-            if environment.name() == 'UCIBandit':
-                reward = environment.get_reward(action_index)
+            if environment.name() == "UCIBandit":
+                reward = _environment_call(environment.get_reward, reward_seed, action_index)
             else:
-                reward = environment.get_reward(action)
-            # Obtain the context (feature vector) corresponding to the chosen action
+                reward = _environment_call(environment.get_reward, reward_seed, action)
             context = action_set[action_index]
-            # Pass the chosen arm, its context and the observed reward to the agent
             agent.receive_reward(action, context, reward)
 
-            # Compute instant (pseudo) regret (environment-agnostic)
+            # Regret uses expected rewards, not noisy observed rewards.
             means = environment.get_means()
-            best_reward = np.max(means)
-            # Identify the expected reward of the chosen arm regardless of how the agent encodes it
-
-            chosen_mean = means[action_index]   
-            data[n,t]= best_reward - chosen_mean  # pseudo regret
+            data[run_index, round_index] = np.max(means) - means[action_index]
 
     return agent.name(), data
 
 
-def run_experiment(environment, agents, N, T):
-    """
-    Play N trajectories for all agents over a horizon T. Store data in a dictionary.
+def run_experiment(environment, agents, N, T, seed=42):
+    """Compare agents using independent runs and shared environment randomness."""
+    names = [agent.name() for agent in agents]
+    if len(names) != len(set(names)):
+        raise ValueError("Agent names must be unique so results cannot overwrite each other.")
+    if not agents:
+        raise ValueError("Provide at least one agent to compare.")
 
-    :param environment: a linear bandit instance
-    :param agent: a list of contextual bandit algorithms to compare
-    :param N: number of independent simulations
-    :param T: decision horizon
-    :return: the pseudo regret for each agent in a dictionary indexed by the agent's name
-    """
-
+    # Experiment execution should not change the caller's random streams.
+    python_state = random.getstate()
+    numpy_state = np.random.get_state()
+    torch_state = torch.random.get_rng_state()
+    cuda_states = torch.cuda.get_rng_state_all() if torch.cuda.is_available() else None
     all_data = {}
-
-    for agent in agents:
-        agent_id, regrets = play_bandit(environment, agent, N, T)
-
-        all_data[agent_id] = regrets
-
+    try:
+        for agent in agents:
+            agent_id, regrets = play_bandit(environment, agent, N, T, seed=seed)
+            all_data[agent_id] = regrets
+    finally:
+        random.setstate(python_state)
+        np.random.set_state(numpy_state)
+        torch.random.set_rng_state(torch_state)
+        if cuda_states is not None:
+            torch.cuda.set_rng_state_all(cuda_states)
     return all_data
 
 def plot_result(regrets, logscale=False, lb=None,q=10, mode = 'regret', cumulative=True):
@@ -136,16 +155,22 @@ class Collector(Dataset):
         return len(self.rewards)
 
     def collect_data(self, arm, context, reward):
-        self.context.append(context.cpu())
+        # Runners supply NumPy features; tensor callers are also accepted.
+        context_tensor = torch.as_tensor(context, dtype=torch.float32).detach().cpu().clone()
+        self.context.append(context_tensor)
         self.chosen_arms.append(arm)
-        self.rewards.append(reward)
+        self.rewards.append(float(reward))
 
     def fetch_batch(self, batch_size=None):
-        if batch_size is None or batch_size > len(self.rewards):
+        if batch_size is None:
             return self.context, self.rewards
-        else:
-            offset = np.random.randint(0, len(self.rewards) - batch_size)
-            return self.context[offset:offset + batch_size], self.rewards[offset: offset + batch_size]
+        if batch_size < 1:
+            raise ValueError("batch_size must be positive or None.")
+        if batch_size >= len(self.rewards):
+            return self.context, self.rewards
+        # Include the last legal starting point and allow batch_size == history size.
+        offset = np.random.randint(0, len(self.rewards) - batch_size + 1)
+        return self.context[offset:offset + batch_size], self.rewards[offset:offset + batch_size]
 
     def clear(self):
         self.context = []

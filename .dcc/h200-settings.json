@@ -1,0 +1,8 @@
+{
+  "account": "honglab",
+  "partition": "scavenger-h200",
+  "gpu_type": "H200",
+  "gres": "gpu:h200:1",
+  "conda_environment": "RL",
+  "status": "Prepared for future execution; no job submitted."
+}

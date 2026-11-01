@@ -167,6 +167,12 @@ class UCIBandit(Environment):
         self.get_action_set()
 
     # ------------------------------------------------------------------ API
+    def reset(self):
+        """Start a fresh shuffled data pass before an independent experiment run."""
+        self._iter = iter(self.loader)
+        self.current_label = None
+        self.current_action_set = None
+
     def get_action_set(self) -> torch.Tensor:
         """Return context matrix of shape ``(K, d)`` for current round."""
 

@@ -26,11 +26,17 @@ class LangevinMC(Optimizer):
                  params,              # parameters of the model
                  lr=0.01,             # learning rate
                  beta_inv=0.01,       # inverse temperature parameter
-                 sigma=1.0,           # variance of the Gaussian noise
+                 sigma=1.0,           # standard-deviation multiplier for Langevin noise
                  weight_decay=1.0,
                  device=None):   # l2 penalty
-        if lr < 0:
-            raise ValueError('lr must be positive')
+        if not math.isfinite(lr) or lr <= 0:
+            raise ValueError("lr must be finite and positive.")
+        if not math.isfinite(beta_inv) or beta_inv < 0:
+            raise ValueError("beta_inv must be finite and nonnegative.")
+        if not math.isfinite(sigma) or sigma < 0:
+            raise ValueError("sigma must be finite and nonnegative.")
+        if not math.isfinite(weight_decay) or weight_decay < 0:
+            raise ValueError("weight_decay must be finite and nonnegative.")
         if device:
             self.device = device
         else:
@@ -57,26 +63,16 @@ class LangevinMC(Optimizer):
     @torch.no_grad()
     def step(self):
         self.curr_step += 1
-        if self.curr_step == 1:
-            self.init_map()
-
-        lr = self.lr
-        temp = self.temp
-        noise = temp * torch.randn(self.total_size, device=self.device)
-
         for group in self.param_groups:
-            weight_decay = group['weight_decay']
-
-            params_with_grad = []
-            d_p_list = []
-            for p in group['params']:
-                if p.grad is not None:
-                    params_with_grad.append(p)
-
-                    start, length = self.mapping[p]
-                    add_noise = noise[start: start + length].reshape(p.shape)
-                    delta_p = p.grad
-                    delta_p = delta_p.add_(add_noise)
-                    d_p_list.append(delta_p)
-                    # p.add_(delta_p)
-            lmc(params_with_grad, d_p_list, weight_decay, lr)
+            parameters = []
+            noisy_gradients = []
+            for parameter in group['params']:
+                if parameter.grad is None:
+                    continue
+                # Parameter-shaped noise follows the model's actual device and dtype.
+                # The resulting parameter noise has scale sigma * sqrt(2 * lr * beta_inv).
+                noise = self.temp * torch.randn_like(parameter)
+                noisy_gradient = parameter.grad + noise
+                parameters.append(parameter)
+                noisy_gradients.append(noisy_gradient)
+            lmc(parameters, noisy_gradients, group['weight_decay'], self.lr)
