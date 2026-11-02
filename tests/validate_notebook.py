@@ -503,6 +503,8 @@ def main():
         print('SKIP NumPy checks: NumPy is not installed in this interpreter.')
         print('SKIP CPU PyTorch checks: required local dependencies are unavailable.')
         return
+    # Test-only rewards must not read or write production experiment checkpoints.
+    os.environ.pop('BIOSTAT825_CHECKPOINT_DIR', None)
     namespace = load_definitions(notebook, np)
     print('PASS linear algorithms:', check_linear(namespace, np))
     print('PASS LLM runner logic:', check_llm_runners(namespace, np))
