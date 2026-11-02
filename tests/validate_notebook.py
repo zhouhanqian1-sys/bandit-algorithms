@@ -74,7 +74,7 @@ def literal_values(notebook):
     return values
 
 
-def check_structure(notebook):
+def check_structure(notebook, allow_executed=False):
     headings = []
     code_count = 0
     for index, cell in enumerate(notebook['cells']):
@@ -85,8 +85,12 @@ def check_structure(notebook):
             headings.extend(re.findall(r'^## Part\s+(\d+[AB]?)\b', source, re.MULTILINE))
         if cell['cell_type'] == 'code':
             ast.parse(source, filename=f'notebook-cell-{index}')
-            assert not cell.get('outputs'), 'Code implementation must not include fabricated outputs.'
-            assert cell.get('execution_count') is None
+            if not allow_executed:
+                assert not cell.get('outputs'), 'Use --allow-executed for recorded experiment outputs.'
+                assert cell.get('execution_count') is None
+            else:
+                count = cell.get('execution_count')
+                assert count is None or (isinstance(count, int) and count > 0)
             assert 'TODO' not in source and 'YOUR CODE HERE' not in source
             code_count += 1
     assert headings == ['1', '2', '3', '4', '5', '6', '7A', '7B'], headings
@@ -493,10 +497,12 @@ def check_torch(notebook, np):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--notebook', type=Path, default=PROJECT / 'Experiments.ipynb')
+    parser.add_argument('--allow-executed', action='store_true',
+                        help='Accept recorded outputs in a completed or archived notebook.')
     arguments = parser.parse_args()
     sys.path.insert(0, str(PROJECT))
     notebook = read_notebook(arguments.notebook)
-    print('PASS structure:', check_structure(notebook))
+    print('PASS structure:', check_structure(notebook, allow_executed=arguments.allow_executed))
     try:
         import numpy as np
     except ImportError:
