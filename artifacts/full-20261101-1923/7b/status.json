@@ -1,0 +1,22 @@
+{
+  "phase": "7b",
+  "state": "complete",
+  "started_at": "2026-11-02T01:45:32.440509+00:00",
+  "source_fingerprint": "842e558951bbc33647761e16a5c33dca0a212f71da6f1cea1db9ef45771e1174",
+  "completed_cells": [
+    61,
+    63,
+    64,
+    65,
+    68,
+    70,
+    72,
+    74,
+    75
+  ],
+  "N_T_policy": "Original notebook defaults; no overrides.",
+  "current_cell": 75,
+  "current_cell_id": "medical-profile-b-rewards",
+  "updated_at": "2026-11-02T02:24:50.942647+00:00",
+  "completed_at": "2026-11-02T02:24:50.951628+00:00"
+}

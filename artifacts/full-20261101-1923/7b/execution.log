@@ -1,0 +1,292 @@
+$CONDA_PREFIX/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]
+Loading weights:  61%|██████    | 288/473 [00:00<00:00, 2850.16it/s]
+Loading weights: 100%|██████████| 473/473 [00:00<00:00, 2867.45it/s]
+
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+Loading weights:  22%|██▏       | 63/290 [00:00<00:00, 451.09it/s]
+Loading weights:  38%|███▊      | 109/290 [00:00<00:00, 246.06it/s]
+Loading weights: 100%|██████████| 290/290 [00:00<00:00, 685.90it/s]
+Qwen2Model(
+  (embed_tokens): Embedding(151936, 896)
+  (layers): ModuleList(
+    (0-23): 24 x Qwen2DecoderLayer(
+      (self_attn): Qwen2Attention(
+        (q_proj): Linear(in_features=896, out_features=896, bias=True)
+        (k_proj): Linear(in_features=896, out_features=128, bias=True)
+        (v_proj): Linear(in_features=896, out_features=128, bias=True)
+        (o_proj): Linear(in_features=896, out_features=896, bias=False)
+      )
+      (mlp): Qwen2MLP(
+        (gate_proj): Linear(in_features=896, out_features=4864, bias=False)
+        (up_proj): Linear(in_features=896, out_features=4864, bias=False)
+        (down_proj): Linear(in_features=4864, out_features=896, bias=False)
+        (act_fn): SiLUActivation()
+      )
+      (input_layernorm): Qwen2RMSNorm((896,), eps=1e-06)
+      (post_attention_layernorm): Qwen2RMSNorm((896,), eps=1e-06)
+    )
+  )
+  (norm): Qwen2RMSNorm((896,), eps=1e-06)
+  (rotary_emb): Qwen2RotaryEmbedding()
+)
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 109353 examples [00:17, 6370.24 examples/s]
+Generating train split: 109353 examples [00:17, 6204.74 examples/s]
+
+Generating dev split: 0 examples [00:00, ? examples/s]
+Generating dev split: 2232 examples [00:00, 5917.19 examples/s]
+Generating dev split: 2232 examples [00:00, 5648.77 examples/s]
+
+Generating test split: 0 examples [00:00, ? examples/s]
+Generating test split: 777 examples [00:00, 6310.48 examples/s]
+Generating test split: 777 examples [00:00, 4440.76 examples/s]
+
+Filter:   0%|          | 0/109353 [00:00<?, ? examples/s]
+Filter:   1%|          | 1000/109353 [00:00<00:11, 9820.86 examples/s]
+Filter:   4%|▎         | 4000/109353 [00:00<00:06, 16450.03 examples/s]
+Filter:   7%|▋         | 8000/109353 [00:00<00:05, 18936.75 examples/s]
+Filter:  10%|█         | 11000/109353 [00:00<00:05, 19374.91 examples/s]
+Filter:  13%|█▎        | 14000/109353 [00:00<00:04, 19891.16 examples/s]
+Filter:  16%|█▋        | 18000/109353 [00:00<00:04, 20500.04 examples/s]
+Filter:  20%|██        | 22000/109353 [00:01<00:04, 21048.57 examples/s]
+Filter:  24%|██▍       | 26000/109353 [00:01<00:03, 21412.38 examples/s]
+Filter:  27%|██▋       | 30000/109353 [00:01<00:03, 21421.70 examples/s]
+Filter:  31%|███       | 34000/109353 [00:01<00:03, 21357.19 examples/s]
+Filter:  35%|███▍      | 38000/109353 [00:01<00:03, 19993.42 examples/s]
+Filter:  38%|███▊      | 42000/109353 [00:02<00:03, 20196.77 examples/s]
+Filter:  41%|████      | 45000/109353 [00:02<00:03, 20252.81 examples/s]
+Filter:  44%|████▍     | 48000/109353 [00:02<00:02, 20484.33 examples/s]
+Filter:  48%|████▊     | 52000/109353 [00:02<00:02, 20859.26 examples/s]
+Filter:  51%|█████     | 56000/109353 [00:02<00:02, 21513.01 examples/s]
+Filter:  54%|█████▍    | 59000/109353 [00:02<00:02, 21108.30 examples/s]
+Filter:  58%|█████▊    | 63000/109353 [00:03<00:02, 21065.43 examples/s]
+Filter:  60%|██████    | 66000/109353 [00:03<00:02, 21132.69 examples/s]
+Filter:  63%|██████▎   | 69000/109353 [00:03<00:01, 20362.67 examples/s]
+Filter:  66%|██████▌   | 72000/109353 [00:03<00:01, 20533.72 examples/s]
+Filter:  69%|██████▊   | 75000/109353 [00:03<00:01, 19069.07 examples/s]
+Filter:  72%|███████▏  | 79000/109353 [00:03<00:01, 20057.97 examples/s]
+Filter:  75%|███████▍  | 82000/109353 [00:04<00:01, 19999.18 examples/s]
+Filter:  78%|███████▊  | 85000/109353 [00:04<00:01, 20210.51 examples/s]
+Filter:  80%|████████  | 88000/109353 [00:04<00:01, 20026.31 examples/s]
+Filter:  83%|████████▎ | 91000/109353 [00:04<00:00, 20094.54 examples/s]
+Filter:  87%|████████▋ | 95000/109353 [00:04<00:00, 18605.40 examples/s]
+Filter:  90%|████████▉ | 98000/109353 [00:04<00:00, 18969.89 examples/s]
+Filter:  92%|█████████▏| 101000/109353 [00:05<00:00, 19440.64 examples/s]
+Filter:  95%|█████████▌| 104000/109353 [00:05<00:00, 19527.72 examples/s]
+Filter:  97%|█████████▋| 106000/109353 [00:05<00:00, 18021.17 examples/s]
+Filter: 100%|█████████▉| 109000/109353 [00:05<00:00, 18726.53 examples/s]
+Filter: 100%|██████████| 109353/109353 [00:05<00:00, 19916.64 examples/s]
+
+Filter:   0%|          | 0/2232 [00:00<?, ? examples/s]
+Filter: 100%|██████████| 2232/2232 [00:00<00:00, 32103.12 examples/s]
+
+Filter:   0%|          | 0/777 [00:00<?, ? examples/s]
+Filter: 100%|██████████| 777/777 [00:00<00:00, 15188.33 examples/s]
+MEDICAL_SETUP_VALIDATED: five questions, 17 responses, 17-dimensional features.
+Medical A: run 1/3, round 1/1000 saved.
+LLM progress patient_reward: 100 successful calls, 27.1s inside reward generation
+LLM progress patient_reward: 200 successful calls, 54.1s inside reward generation
+Medical A: run 1/3, round 100/1000 saved.
+LLM progress patient_reward: 300 successful calls, 79.7s inside reward generation
+LLM progress patient_reward: 400 successful calls, 97.8s inside reward generation
+Medical A: run 1/3, round 200/1000 saved.
+LLM progress patient_reward: 500 successful calls, 115.5s inside reward generation
+LLM progress patient_reward: 600 successful calls, 133.3s inside reward generation
+Medical A: run 1/3, round 300/1000 saved.
+LLM progress patient_reward: 700 successful calls, 151.2s inside reward generation
+LLM progress patient_reward: 800 successful calls, 169.3s inside reward generation
+Medical A: run 1/3, round 400/1000 saved.
+LLM progress patient_reward: 900 successful calls, 187.0s inside reward generation
+LLM progress patient_reward: 1000 successful calls, 204.0s inside reward generation
+Medical A: run 1/3, round 500/1000 saved.
+LLM progress patient_reward: 1100 successful calls, 220.4s inside reward generation
+LLM progress patient_reward: 1200 successful calls, 236.9s inside reward generation
+Medical A: run 1/3, round 600/1000 saved.
+LLM progress patient_reward: 1300 successful calls, 253.3s inside reward generation
+LLM progress patient_reward: 1400 successful calls, 269.9s inside reward generation
+Medical A: run 1/3, round 700/1000 saved.
+LLM progress patient_reward: 1500 successful calls, 286.2s inside reward generation
+LLM progress patient_reward: 1600 successful calls, 302.7s inside reward generation
+LLM progress patient_reward: 1700 successful calls, 319.9s inside reward generation
+Medical A: run 1/3, round 800/1000 saved.
+LLM progress patient_reward: 1800 successful calls, 337.6s inside reward generation
+LLM progress patient_reward: 1900 successful calls, 355.2s inside reward generation
+Medical A: run 1/3, round 900/1000 saved.
+LLM progress patient_reward: 2000 successful calls, 372.6s inside reward generation
+LLM progress patient_reward: 2100 successful calls, 390.8s inside reward generation
+Medical A: run 1/3, round 1000/1000 saved.
+Medical A: run 2/3, round 1/1000 saved.
+LLM progress patient_reward: 2200 successful calls, 408.8s inside reward generation
+LLM progress patient_reward: 2300 successful calls, 427.1s inside reward generation
+Medical A: run 2/3, round 100/1000 saved.
+LLM progress patient_reward: 2400 successful calls, 445.1s inside reward generation
+LLM progress patient_reward: 2500 successful calls, 462.7s inside reward generation
+Medical A: run 2/3, round 200/1000 saved.
+LLM progress patient_reward: 2600 successful calls, 480.1s inside reward generation
+LLM progress patient_reward: 2700 successful calls, 497.0s inside reward generation
+Medical A: run 2/3, round 300/1000 saved.
+LLM progress patient_reward: 2800 successful calls, 514.2s inside reward generation
+LLM progress patient_reward: 2900 successful calls, 531.1s inside reward generation
+LLM progress patient_reward: 3000 successful calls, 548.5s inside reward generation
+Medical A: run 2/3, round 400/1000 saved.
+LLM progress patient_reward: 3100 successful calls, 565.8s inside reward generation
+LLM progress patient_reward: 3200 successful calls, 582.6s inside reward generation
+Medical A: run 2/3, round 500/1000 saved.
+LLM progress patient_reward: 3300 successful calls, 599.3s inside reward generation
+LLM progress patient_reward: 3400 successful calls, 616.1s inside reward generation
+Medical A: run 2/3, round 600/1000 saved.
+LLM progress patient_reward: 3500 successful calls, 632.4s inside reward generation
+LLM progress patient_reward: 3600 successful calls, 648.8s inside reward generation
+Medical A: run 2/3, round 700/1000 saved.
+LLM progress patient_reward: 3700 successful calls, 665.4s inside reward generation
+LLM progress patient_reward: 3800 successful calls, 681.9s inside reward generation
+Medical A: run 2/3, round 800/1000 saved.
+LLM progress patient_reward: 3900 successful calls, 698.1s inside reward generation
+LLM progress patient_reward: 4000 successful calls, 714.2s inside reward generation
+Medical A: run 2/3, round 900/1000 saved.
+LLM progress patient_reward: 4100 successful calls, 730.5s inside reward generation
+LLM progress patient_reward: 4200 successful calls, 746.7s inside reward generation
+Medical A: run 2/3, round 1000/1000 saved.
+Medical A: run 3/3, round 1/1000 saved.
+LLM progress patient_reward: 4300 successful calls, 763.1s inside reward generation
+LLM progress patient_reward: 4400 successful calls, 779.1s inside reward generation
+LLM progress patient_reward: 4500 successful calls, 795.4s inside reward generation
+Medical A: run 3/3, round 100/1000 saved.
+LLM progress patient_reward: 4600 successful calls, 811.9s inside reward generation
+LLM progress patient_reward: 4700 successful calls, 828.2s inside reward generation
+Medical A: run 3/3, round 200/1000 saved.
+LLM progress patient_reward: 4800 successful calls, 844.5s inside reward generation
+LLM progress patient_reward: 4900 successful calls, 860.8s inside reward generation
+Medical A: run 3/3, round 300/1000 saved.
+LLM progress patient_reward: 5000 successful calls, 882.9s inside reward generation
+LLM progress patient_reward: 5100 successful calls, 908.1s inside reward generation
+Medical A: run 3/3, round 400/1000 saved.
+LLM progress patient_reward: 5200 successful calls, 933.2s inside reward generation
+LLM progress patient_reward: 5300 successful calls, 949.0s inside reward generation
+Medical A: run 3/3, round 500/1000 saved.
+LLM progress patient_reward: 5400 successful calls, 964.9s inside reward generation
+LLM progress patient_reward: 5500 successful calls, 980.7s inside reward generation
+Medical A: run 3/3, round 600/1000 saved.
+LLM progress patient_reward: 5600 successful calls, 996.5s inside reward generation
+LLM progress patient_reward: 5700 successful calls, 1012.7s inside reward generation
+Medical A: run 3/3, round 700/1000 saved.
+LLM progress patient_reward: 5800 successful calls, 1037.3s inside reward generation
+LLM progress patient_reward: 5900 successful calls, 1063.6s inside reward generation
+LLM progress patient_reward: 6000 successful calls, 1089.4s inside reward generation
+Medical A: run 3/3, round 800/1000 saved.
+LLM progress patient_reward: 6100 successful calls, 1115.0s inside reward generation
+LLM progress patient_reward: 6200 successful calls, 1138.4s inside reward generation
+Medical A: run 3/3, round 900/1000 saved.
+LLM progress patient_reward: 6300 successful calls, 1154.5s inside reward generation
+LLM progress patient_reward: 6400 successful calls, 1170.4s inside reward generation
+Medical A: run 3/3, round 1000/1000 saved.
+Random: 756.87 ± 5.27
+LinUCB (alpha=1, lambda=1): 802.57 ± 5.78
+LinTS (nu=1, lambda=1): 773.03 ± 2.62
+<Figure size 1000x500 with 1 Axes>
+Medical B: run 1/3, round 1/1000 saved.
+LLM progress patient_reward: 6500 successful calls, 1193.4s inside reward generation
+LLM progress patient_reward: 6600 successful calls, 1219.9s inside reward generation
+Medical B: run 1/3, round 100/1000 saved.
+LLM progress patient_reward: 6700 successful calls, 1241.3s inside reward generation
+LLM progress patient_reward: 6800 successful calls, 1257.7s inside reward generation
+Medical B: run 1/3, round 200/1000 saved.
+LLM progress patient_reward: 6900 successful calls, 1274.0s inside reward generation
+LLM progress patient_reward: 7000 successful calls, 1290.2s inside reward generation
+Medical B: run 1/3, round 300/1000 saved.
+LLM progress patient_reward: 7100 successful calls, 1306.4s inside reward generation
+LLM progress patient_reward: 7200 successful calls, 1322.9s inside reward generation
+Medical B: run 1/3, round 400/1000 saved.
+LLM progress patient_reward: 7300 successful calls, 1339.4s inside reward generation
+LLM progress patient_reward: 7400 successful calls, 1355.8s inside reward generation
+Medical B: run 1/3, round 500/1000 saved.
+LLM progress patient_reward: 7500 successful calls, 1372.1s inside reward generation
+LLM progress patient_reward: 7600 successful calls, 1388.8s inside reward generation
+LLM progress patient_reward: 7700 successful calls, 1405.0s inside reward generation
+Medical B: run 1/3, round 600/1000 saved.
+LLM progress patient_reward: 7800 successful calls, 1421.5s inside reward generation
+LLM progress patient_reward: 7900 successful calls, 1438.1s inside reward generation
+Medical B: run 1/3, round 700/1000 saved.
+LLM progress patient_reward: 8000 successful calls, 1454.6s inside reward generation
+LLM progress patient_reward: 8100 successful calls, 1471.0s inside reward generation
+Medical B: run 1/3, round 800/1000 saved.
+LLM progress patient_reward: 8200 successful calls, 1487.6s inside reward generation
+LLM progress patient_reward: 8300 successful calls, 1504.0s inside reward generation
+Medical B: run 1/3, round 900/1000 saved.
+LLM progress patient_reward: 8400 successful calls, 1520.4s inside reward generation
+LLM progress patient_reward: 8500 successful calls, 1536.8s inside reward generation
+Medical B: run 1/3, round 1000/1000 saved.
+Medical B: run 2/3, round 1/1000 saved.
+LLM progress patient_reward: 8600 successful calls, 1553.0s inside reward generation
+LLM progress patient_reward: 8700 successful calls, 1569.4s inside reward generation
+Medical B: run 2/3, round 100/1000 saved.
+LLM progress patient_reward: 8800 successful calls, 1585.8s inside reward generation
+LLM progress patient_reward: 8900 successful calls, 1602.1s inside reward generation
+Medical B: run 2/3, round 200/1000 saved.
+LLM progress patient_reward: 9000 successful calls, 1618.4s inside reward generation
+LLM progress patient_reward: 9100 successful calls, 1634.6s inside reward generation
+Medical B: run 2/3, round 300/1000 saved.
+LLM progress patient_reward: 9200 successful calls, 1650.9s inside reward generation
+LLM progress patient_reward: 9300 successful calls, 1667.4s inside reward generation
+LLM progress patient_reward: 9400 successful calls, 1683.7s inside reward generation
+Medical B: run 2/3, round 400/1000 saved.
+LLM progress patient_reward: 9500 successful calls, 1700.0s inside reward generation
+LLM progress patient_reward: 9600 successful calls, 1716.5s inside reward generation
+Medical B: run 2/3, round 500/1000 saved.
+LLM progress patient_reward: 9700 successful calls, 1732.8s inside reward generation
+LLM progress patient_reward: 9800 successful calls, 1749.3s inside reward generation
+Medical B: run 2/3, round 600/1000 saved.
+LLM progress patient_reward: 9900 successful calls, 1765.7s inside reward generation
+LLM progress patient_reward: 10000 successful calls, 1782.0s inside reward generation
+Medical B: run 2/3, round 700/1000 saved.
+LLM progress patient_reward: 10100 successful calls, 1798.4s inside reward generation
+LLM progress patient_reward: 10200 successful calls, 1814.8s inside reward generation
+Medical B: run 2/3, round 800/1000 saved.
+LLM progress patient_reward: 10300 successful calls, 1831.2s inside reward generation
+LLM progress patient_reward: 10400 successful calls, 1847.6s inside reward generation
+Medical B: run 2/3, round 900/1000 saved.
+LLM progress patient_reward: 10500 successful calls, 1864.1s inside reward generation
+LLM progress patient_reward: 10600 successful calls, 1880.5s inside reward generation
+Medical B: run 2/3, round 1000/1000 saved.
+Medical B: run 3/3, round 1/1000 saved.
+LLM progress patient_reward: 10700 successful calls, 1896.8s inside reward generation
+LLM progress patient_reward: 10800 successful calls, 1912.9s inside reward generation
+Medical B: run 3/3, round 100/1000 saved.
+LLM progress patient_reward: 10900 successful calls, 1929.5s inside reward generation
+LLM progress patient_reward: 11000 successful calls, 1945.8s inside reward generation
+Medical B: run 3/3, round 200/1000 saved.
+LLM progress patient_reward: 11100 successful calls, 1962.2s inside reward generation
+LLM progress patient_reward: 11200 successful calls, 1978.8s inside reward generation
+LLM progress patient_reward: 11300 successful calls, 1995.2s inside reward generation
+Medical B: run 3/3, round 300/1000 saved.
+LLM progress patient_reward: 11400 successful calls, 2011.7s inside reward generation
+LLM progress patient_reward: 11500 successful calls, 2027.7s inside reward generation
+Medical B: run 3/3, round 400/1000 saved.
+LLM progress patient_reward: 11600 successful calls, 2044.3s inside reward generation
+LLM progress patient_reward: 11700 successful calls, 2060.8s inside reward generation
+Medical B: run 3/3, round 500/1000 saved.
+LLM progress patient_reward: 11800 successful calls, 2077.3s inside reward generation
+LLM progress patient_reward: 11900 successful calls, 2093.7s inside reward generation
+Medical B: run 3/3, round 600/1000 saved.
+LLM progress patient_reward: 12000 successful calls, 2110.2s inside reward generation
+LLM progress patient_reward: 12100 successful calls, 2126.6s inside reward generation
+Medical B: run 3/3, round 700/1000 saved.
+LLM progress patient_reward: 12200 successful calls, 2143.1s inside reward generation
+LLM progress patient_reward: 12300 successful calls, 2159.6s inside reward generation
+Medical B: run 3/3, round 800/1000 saved.
+LLM progress patient_reward: 12400 successful calls, 2176.1s inside reward generation
+LLM progress patient_reward: 12500 successful calls, 2196.7s inside reward generation
+Medical B: run 3/3, round 900/1000 saved.
+LLM progress patient_reward: 12600 successful calls, 2224.6s inside reward generation
+LLM progress patient_reward: 12700 successful calls, 2252.2s inside reward generation
+Medical B: run 3/3, round 1000/1000 saved.
+Random: 889.73 ± 5.98
+LinUCB (alpha=1, lambda=1): 945.73 ± 3.91
+LinTS (nu=1, lambda=1): 916.67 ± 2.24
+<Figure size 1000x500 with 1 Axes>

@@ -1,0 +1,142 @@
+{
+  "cell_index": 75,
+  "variables": {
+    "medical_features": {
+      "kind": "list",
+      "items": [
+        "medical_features__0",
+        "medical_features__1",
+        "medical_features__2",
+        "medical_features__3",
+        "medical_features__4"
+      ]
+    },
+    "medical_rewards_a": {
+      "kind": "array",
+      "key": "medical_rewards_a",
+      "shape": [
+        3,
+        3,
+        1000
+      ],
+      "dtype": "float64"
+    },
+    "medical_actions_a": {
+      "kind": "array",
+      "key": "medical_actions_a",
+      "shape": [
+        3,
+        3,
+        1000
+      ],
+      "dtype": "int64"
+    },
+    "medical_question_indices_a": {
+      "kind": "array",
+      "key": "medical_question_indices_a",
+      "shape": [
+        3,
+        1000
+      ],
+      "dtype": "int64"
+    },
+    "medical_rewards_b": {
+      "kind": "array",
+      "key": "medical_rewards_b",
+      "shape": [
+        3,
+        3,
+        1000
+      ],
+      "dtype": "float64"
+    },
+    "medical_actions_b": {
+      "kind": "array",
+      "key": "medical_actions_b",
+      "shape": [
+        3,
+        3,
+        1000
+      ],
+      "dtype": "int64"
+    },
+    "medical_question_indices_b": {
+      "kind": "array",
+      "key": "medical_question_indices_b",
+      "shape": [
+        3,
+        1000
+      ],
+      "dtype": "int64"
+    }
+  },
+  "values": {
+    "question_ids": [
+      "ChatDoctor,12874",
+      "ChatDoctor,23444",
+      "ChatDoctor,23622",
+      "ChatDoctor,31078",
+      "ChatDoctor,349"
+    ],
+    "medical_questions": [
+      {
+        "prompt_id": "ChatDoctor,12874",
+        "answer_ids": [
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "answer_count": 3
+      },
+      {
+        "prompt_id": "ChatDoctor,23444",
+        "answer_ids": [
+          "a0",
+          "a1",
+          "a2",
+          "a3"
+        ],
+        "answer_count": 4
+      },
+      {
+        "prompt_id": "ChatDoctor,23622",
+        "answer_ids": [
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "answer_count": 3
+      },
+      {
+        "prompt_id": "ChatDoctor,31078",
+        "answer_ids": [
+          "a0",
+          "a1",
+          "a2"
+        ],
+        "answer_count": 3
+      },
+      {
+        "prompt_id": "ChatDoctor,349",
+        "answer_ids": [
+          "a0",
+          "a1",
+          "a2",
+          "a3"
+        ],
+        "answer_count": 4
+      }
+    ],
+    "medical_profiles": {
+      "A": "I am reading this on my phone and can give it only a short, quick reading. Medical terms are unfamiliar to me. I want the main answer first and one clear next step. I would choose a brief, useful answer over a thorough explanation or a comforting introduction. Extra detail can make an answer worse for me: lists of diagnoses, tests, or technical options make me lose the main point. My personal satisfaction scale is: 0-3 if I feel overwhelmed or cannot quickly tell what to do; 4-6 if useful advice is buried in a long or technical explanation; 7-10 if I can immediately understand the main point and next step in plain language. Brevity alone is insufficient: the answer must address my concern and keep essential cautions understandable.",
+      "B": "I am preparing questions for my next conversation with my clinician. I have time to read and am comfortable with medical terms. I want to understand why the advice fits the details I reported. I would choose a careful explanation over a short answer or a warm tone. My personal satisfaction scale is: 0-3 for a conclusion, reassurance, or referral with little explanation; 4-6 for general information or a list of possibilities without explaining their relevance to me; 7-10 for reasoning that connects my reported details to possible explanations, next steps, and uncertainty. Extra words earn no credit unless they help me understand those connections."
+    },
+    "medical_N": 3,
+    "medical_T": 1000,
+    "medical_names": [
+      "Random",
+      "LinUCB (alpha=1, lambda=1)",
+      "LinTS (nu=1, lambda=1)"
+    ]
+  }
+}

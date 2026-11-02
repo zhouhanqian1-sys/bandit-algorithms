@@ -1,0 +1,54 @@
+{
+  "medical_rewards_a": {
+    "Random": {
+      "N": 3,
+      "T": 1000,
+      "final_mean": 756.8666666666667,
+      "final_sample_std": 5.272886622461485,
+      "final_percentile_10": 752.48,
+      "final_percentile_90": 760.48
+    },
+    "LinUCB (alpha=1, lambda=1)": {
+      "N": 3,
+      "T": 1000,
+      "final_mean": 802.5666666666667,
+      "final_sample_std": 5.783021125098316,
+      "final_percentile_10": 797.76,
+      "final_percentile_90": 806.48
+    },
+    "LinTS (nu=1, lambda=1)": {
+      "N": 3,
+      "T": 1000,
+      "final_mean": 773.0333333333333,
+      "final_sample_std": 2.615976554431139,
+      "final_percentile_10": 771.02,
+      "final_percentile_90": 775.18
+    }
+  },
+  "medical_rewards_b": {
+    "Random": {
+      "N": 3,
+      "T": 1000,
+      "final_mean": 889.7333333333335,
+      "final_sample_std": 5.978572850884472,
+      "final_percentile_10": 884.7800000000001,
+      "final_percentile_90": 893.66
+    },
+    "LinUCB (alpha=1, lambda=1)": {
+      "N": 3,
+      "T": 1000,
+      "final_mean": 945.7333333333335,
+      "final_sample_std": 3.91066916694995,
+      "final_percentile_10": 942.4800000000001,
+      "final_percentile_90": 948.5600000000001
+    },
+    "LinTS (nu=1, lambda=1)": {
+      "N": 3,
+      "T": 1000,
+      "final_mean": 916.6666666666666,
+      "final_sample_std": 2.23681320930763,
+      "final_percentile_10": 914.8200000000002,
+      "final_percentile_90": 918.1
+    }
+  }
+}

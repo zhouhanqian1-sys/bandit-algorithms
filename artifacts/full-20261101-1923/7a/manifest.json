@@ -1,0 +1,113 @@
+{
+  "cell_index": 57,
+  "variables": {
+    "movie_rewards": {
+      "kind": "array",
+      "key": "movie_rewards",
+      "shape": [
+        4,
+        3,
+        1000
+      ],
+      "dtype": "float64"
+    },
+    "movie_actions": {
+      "kind": "array",
+      "key": "movie_actions",
+      "shape": [
+        4,
+        3,
+        1000
+      ],
+      "dtype": "int64"
+    },
+    "movie_rewards_b": {
+      "kind": "array",
+      "key": "movie_rewards_b",
+      "shape": [
+        4,
+        3,
+        1000
+      ],
+      "dtype": "float64"
+    },
+    "movie_actions_b": {
+      "kind": "array",
+      "key": "movie_actions_b",
+      "shape": [
+        4,
+        3,
+        1000
+      ],
+      "dtype": "int64"
+    },
+    "movie_actions_counts": {
+      "kind": "array",
+      "key": "movie_actions_counts",
+      "shape": [
+        4,
+        3,
+        8
+      ],
+      "dtype": "int64"
+    },
+    "movie_actions_b_counts": {
+      "kind": "array",
+      "key": "movie_actions_b_counts",
+      "shape": [
+        4,
+        3,
+        8
+      ],
+      "dtype": "int64"
+    }
+  },
+  "values": {
+    "movies": [
+      [
+        "The Martian",
+        "Space science and survival: an astronaut uses botany and engineering to survive alone on Mars."
+      ],
+      [
+        "Ocean's Eleven",
+        "Heist thriller: a team plans an elaborate casino robbery."
+      ],
+      [
+        "Pride and Prejudice",
+        "Period romance: a young woman and a wealthy man overcome misunderstandings and fall in love."
+      ],
+      [
+        "Titanic",
+        "Romance and disaster: a young couple falls in love on a doomed ship."
+      ],
+      [
+        "La La Land",
+        "Romance and musical: an actor and a musician fall in love."
+      ],
+      [
+        "The Hangover",
+        "Adult comedy: friends reconstruct a wild night in Las Vegas."
+      ],
+      [
+        "The Conjuring",
+        "Supernatural horror: a family faces a terrifying haunting."
+      ],
+      [
+        "Toy Story",
+        "Family animation: toys share a lighthearted adventure about friendship."
+      ]
+    ],
+    "roles": {
+      "A": "I love realistic space science and engineering. Heists and history are okay. I hate romance, musicals, party comedy, supernatural horror, and cartoons.",
+      "B": "I love singing, dancing, and romantic musicals. Romance and cartoons are okay. I hate space science, engineering, heists, history, party comedy, and horror."
+    },
+    "movie_N": 3,
+    "movie_T": 1000,
+    "movie_names": [
+      "Random",
+      "Greedy",
+      "Epsilon-greedy (0.1)",
+      "UCB (exploration=2)"
+    ]
+  }
+}

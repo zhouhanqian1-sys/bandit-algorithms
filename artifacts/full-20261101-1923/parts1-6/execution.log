@@ -1,0 +1,146 @@
+START experiment 1, LinEpsilonGreedy(eps=0,lambda=1), N=50, T=1000
+COMPLETE experiment 1, LinEpsilonGreedy(eps=0,lambda=1)
+START experiment 1, LinEpsilonGreedy(eps=0.1,lambda=1), N=50, T=1000
+COMPLETE experiment 1, LinEpsilonGreedy(eps=0.1,lambda=1)
+START experiment 1, LinUCB(alpha=1,lambda=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 1, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 1, LinTS(prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 1, LinTS(prior_precision=1,delta=0.2)
+Final cumulative regret: mean +/- sample standard deviation
+LinEpsilonGreedy(eps=0,lambda=1): 11.433 +/- 34.594
+LinEpsilonGreedy(eps=0.1,lambda=1): 66.448 +/- 28.176
+LinUCB(alpha=1,lambda=1,delta=0.2): 42.522 +/- 11.599
+LinTS(prior_precision=1,delta=0.2): 34.953 +/- 14.388
+<Figure size 1000x500 with 1 Axes>
+START experiment 2, EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2)
+START experiment 2, EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2)
+START experiment 2, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 2, EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2)
+Final cumulative regret: mean +/- sample standard deviation
+EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2): 19.566 +/- 32.776
+EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2): 18.563 +/- 12.835
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 14.931 +/- 58.036
+EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2): 23.023 +/- 21.766
+Best tested epsilon rule by mean final cumulative regret: 1/t
+START experiment 3, LinEpsilonGreedy(eps=0.1,lambda=1), N=50, T=1000
+COMPLETE experiment 3, LinEpsilonGreedy(eps=0.1,lambda=1)
+START experiment 3, LinEpsilonGreedy(eps=0,lambda=1), N=50, T=1000
+COMPLETE experiment 3, LinEpsilonGreedy(eps=0,lambda=1)
+START experiment 3, LinTS(prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 3, LinTS(prior_precision=1,delta=0.2)
+START experiment 3, LinUCB(alpha=1,lambda=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 3, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 3, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 3, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+Final cumulative regret: mean +/- sample standard deviation
+LinEpsilonGreedy(eps=0.1,lambda=1): 63.193 +/- 11.988
+LinEpsilonGreedy(eps=0,lambda=1): 9.874 +/- 33.304
+LinTS(prior_precision=1,delta=0.2): 32.263 +/- 10.342
+LinUCB(alpha=1,lambda=1,delta=0.2): 45.259 +/- 13.263
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 18.610 +/- 62.808
+<Figure size 1000x500 with 1 Axes>
+<Figure size 1000x500 with 1 Axes>
+START experiment 4, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 4, LinTS(prior_precision=1,delta=0.2)
+START experiment 4, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 4, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 4, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 4, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 4, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 4, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 34.539 +/- 9.666
+LinUCB(alpha=1,lambda=1,delta=0.2): 36.206 +/- 5.794
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 80.181 +/- 134.962
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 25.817 +/- 8.992
+<Figure size 1000x500 with 1 Axes>
+START experiment 5, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 5, LinTS(prior_precision=1,delta=0.2)
+START experiment 5, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 5, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 5, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 5, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 5, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 5, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 39.777 +/- 8.845
+LinUCB(alpha=1,lambda=1,delta=0.2): 60.986 +/- 16.038
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 105.170 +/- 164.627
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 44.138 +/- 13.879
+<Figure size 1000x500 with 1 Axes>
+START experiment 6, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 6, LinTS(prior_precision=1,delta=0.2)
+START experiment 6, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 6, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 6, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 6, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 6, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 6, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 34.527 +/- 6.133
+LinUCB(alpha=1,lambda=1,delta=0.2): 45.969 +/- 1.981
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 95.004 +/- 57.106
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 43.628 +/- 30.208
+<Figure size 1000x500 with 1 Axes>
+START experiment 7, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 7, LinTS(prior_precision=1,delta=0.2)
+START experiment 7, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 7, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 7, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 7, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 7, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 7, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 513.616 +/- 556.665
+LinUCB(alpha=1,lambda=1,delta=0.2): 43.523 +/- 17.284
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 1783.072 +/- 547.183
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 1924.014 +/- 501.593
+<Figure size 1000x500 with 1 Axes>
+START experiment 8, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)
+START experiment 8, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 8, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 8, NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)
+Final cumulative regret: mean +/- sample standard deviation
+NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5): 97.808 +/- 55.258
+NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5): 58.262 +/- 36.981
+NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5): 181.785 +/- 310.490
+NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5): 88.834 +/- 43.569
+<Figure size 1000x500 with 1 Axes>
+START experiment 9, reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 9, reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)
+START experiment 9, lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 9, lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)
+START experiment 9, smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 9, smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)
+START experiment 9, more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10), N=10, T=1000
+COMPLETE experiment 9, more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10)
+Final cumulative regret: mean +/- sample standard deviation
+reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5): 352.700 +/- 47.747
+lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5): 316.900 +/- 151.407
+smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5): 375.500 +/- 128.204
+more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10): 361.100 +/- 35.281
+Best tested LMCTS configuration: lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)
+Selected settings: {'lr': 0.01, 'beta_inv': 0.001, 'num_iter': 5}
+START experiment 10, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)
+START experiment 10, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 10, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 10, NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)
+Final cumulative regret: mean +/- sample standard deviation
+NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5): 364.800 +/- 84.001
+NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5): 327.700 +/- 51.855
+NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5): 756.500 +/- 275.049
+NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5): 468.100 +/- 253.103
+<Figure size 1000x500 with 1 Axes>
+<Figure size 1000x500 with 1 Axes>

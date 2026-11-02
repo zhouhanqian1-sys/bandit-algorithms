@@ -1,0 +1,1031 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[2026-11-02T00:24:26.773898+00:00] parts1-6: executing cell 2 (da8be870-1681-4f10-a389-66a79612d2ff)
+[2026-11-02T00:24:26.936699+00:00] parts1-6: executing cell 3 (a7992988-5019-4b3e-ae79-dd781a612ab2)
+[2026-11-02T00:24:27.140846+00:00] parts1-6: executing cell 4 (69816c13-c66e-4258-bb2e-62ba848c59fa)
+[2026-11-02T00:24:27.271771+00:00] parts1-6: executing cell 5 (972ffc58-64a3-4f8f-bcc5-5022c565aeb3)
+[2026-11-02T00:24:27.400083+00:00] parts1-6: executing cell 6 (4e7fee91-7612-4d03-9781-ffc5c4653d17)
+[2026-11-02T00:24:27.555906+00:00] parts1-6: executing cell 8 (63e87162-6bc1-4b8b-9a3b-dfd9b62ee8a0)
+START experiment 1, LinEpsilonGreedy(eps=0,lambda=1), N=50, T=1000
+COMPLETE experiment 1, LinEpsilonGreedy(eps=0,lambda=1)
+START experiment 1, LinEpsilonGreedy(eps=0.1,lambda=1), N=50, T=1000
+COMPLETE experiment 1, LinEpsilonGreedy(eps=0.1,lambda=1)
+START experiment 1, LinUCB(alpha=1,lambda=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 1, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 1, LinTS(prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 1, LinTS(prior_precision=1,delta=0.2)
+Final cumulative regret: mean +/- sample standard deviation
+LinEpsilonGreedy(eps=0,lambda=1): 11.433 +/- 34.594
+LinEpsilonGreedy(eps=0.1,lambda=1): 66.448 +/- 28.176
+LinUCB(alpha=1,lambda=1,delta=0.2): 42.522 +/- 11.599
+LinTS(prior_precision=1,delta=0.2): 34.953 +/- 14.388
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T00:25:27.115372+00:00] parts1-6: executing cell 11 (93ece987-20d0-438a-b092-4b2014037ca1)
+[2026-11-02T00:25:27.293835+00:00] parts1-6: executing cell 12 (63195f33)
+START experiment 2, EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2)
+START experiment 2, EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2)
+START experiment 2, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 2, EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 2, EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2)
+Final cumulative regret: mean +/- sample standard deviation
+EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2): 19.566 +/- 32.776
+EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2): 18.563 +/- 12.835
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 14.931 +/- 58.036
+EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2): 23.023 +/- 21.766
+Best tested epsilon rule by mean final cumulative regret: 1/t
+START experiment 3, LinEpsilonGreedy(eps=0.1,lambda=1), N=50, T=1000
+COMPLETE experiment 3, LinEpsilonGreedy(eps=0.1,lambda=1)
+START experiment 3, LinEpsilonGreedy(eps=0,lambda=1), N=50, T=1000
+COMPLETE experiment 3, LinEpsilonGreedy(eps=0,lambda=1)
+START experiment 3, LinTS(prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 3, LinTS(prior_precision=1,delta=0.2)
+START experiment 3, LinUCB(alpha=1,lambda=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 3, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 3, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=50, T=1000
+COMPLETE experiment 3, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+Final cumulative regret: mean +/- sample standard deviation
+LinEpsilonGreedy(eps=0.1,lambda=1): 63.193 +/- 11.988
+LinEpsilonGreedy(eps=0,lambda=1): 9.874 +/- 33.304
+LinTS(prior_precision=1,delta=0.2): 32.263 +/- 10.342
+LinUCB(alpha=1,lambda=1,delta=0.2): 45.259 +/- 13.263
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 18.610 +/- 62.808
+<Figure size 1000x500 with 1 Axes>
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T00:27:21.345593+00:00] parts1-6: executing cell 16 (30de5b8a)
+[2026-11-02T00:27:21.611267+00:00] parts1-6: executing cell 17 (3806a505)
+[2026-11-02T00:27:21.851261+00:00] parts1-6: executing cell 18 (9b0c9dd4)
+[2026-11-02T00:27:22.108614+00:00] parts1-6: executing cell 19 (328dd78f)
+START experiment 4, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 4, LinTS(prior_precision=1,delta=0.2)
+START experiment 4, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 4, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 4, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 4, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 4, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 4, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 34.539 +/- 9.666
+LinUCB(alpha=1,lambda=1,delta=0.2): 36.206 +/- 5.794
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 80.181 +/- 134.962
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 25.817 +/- 8.992
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T00:28:01.351429+00:00] parts1-6: executing cell 22 (30850072)
+START experiment 5, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 5, LinTS(prior_precision=1,delta=0.2)
+START experiment 5, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 5, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 5, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 5, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 5, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 5, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 39.777 +/- 8.845
+LinUCB(alpha=1,lambda=1,delta=0.2): 60.986 +/- 16.038
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 105.170 +/- 164.627
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 44.138 +/- 13.879
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T00:28:21.930805+00:00] parts1-6: executing cell 23 (da3dfe9e)
+START experiment 6, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 6, LinTS(prior_precision=1,delta=0.2)
+START experiment 6, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 6, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 6, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 6, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 6, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 6, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 34.527 +/- 6.133
+LinUCB(alpha=1,lambda=1,delta=0.2): 45.969 +/- 1.981
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 95.004 +/- 57.106
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 43.628 +/- 30.208
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T00:28:46.000960+00:00] parts1-6: executing cell 24 (e62bc342)
+START experiment 7, LinTS(prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 7, LinTS(prior_precision=1,delta=0.2)
+START experiment 7, LinUCB(alpha=1,lambda=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 7, LinUCB(alpha=1,lambda=1,delta=0.2)
+START experiment 7, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2), N=5, T=1000
+COMPLETE experiment 7, EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)
+START experiment 7, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1), N=5, T=1000
+COMPLETE experiment 7, LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)
+Final cumulative regret: mean +/- sample standard deviation
+LinTS(prior_precision=1,delta=0.2): 513.616 +/- 556.665
+LinUCB(alpha=1,lambda=1,delta=0.2): 43.523 +/- 17.284
+EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2): 1783.072 +/- 547.183
+LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1): 1924.014 +/- 501.593
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T00:29:10.695850+00:00] parts1-6: executing cell 28 (5db0d20b)
+[2026-11-02T00:29:11.021720+00:00] parts1-6: executing cell 29 (935c111a)
+[2026-11-02T00:29:11.289728+00:00] parts1-6: executing cell 30 (70f6bca6)
+[2026-11-02T00:29:11.604297+00:00] parts1-6: executing cell 31 (b76584c8)
+[2026-11-02T00:29:11.911746+00:00] parts1-6: executing cell 32 (f3b00980)
+[2026-11-02T00:29:12.192594+00:00] parts1-6: executing cell 33 (5476352b)
+[2026-11-02T00:29:12.480058+00:00] parts1-6: executing cell 34 (189421ae)
+START experiment 8, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)
+START experiment 8, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 8, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 8, NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 8, NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)
+Final cumulative regret: mean +/- sample standard deviation
+NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5): 97.808 +/- 55.258
+NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5): 58.262 +/- 36.981
+NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5): 181.785 +/- 310.490
+NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5): 88.834 +/- 43.569
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T00:42:37.406168+00:00] parts1-6: executing cell 37 (29e00ea7)
+[2026-11-02T00:42:40.462364+00:00] parts1-6: executing cell 38 (83edc731)
+START experiment 9, reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 9, reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)
+START experiment 9, lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 9, lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)
+START experiment 9, smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 9, smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)
+START experiment 9, more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10), N=10, T=1000
+COMPLETE experiment 9, more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10)
+Final cumulative regret: mean +/- sample standard deviation
+reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5): 352.700 +/- 47.747
+lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5): 316.900 +/- 151.407
+smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5): 375.500 +/- 128.204
+more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10): 361.100 +/- 35.281
+Best tested LMCTS configuration: lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)
+Selected settings: {'lr': 0.01, 'beta_inv': 0.001, 'num_iter': 5}
+START experiment 10, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)
+START experiment 10, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 10, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)
+START experiment 10, NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5), N=10, T=1000
+COMPLETE experiment 10, NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)
+Final cumulative regret: mean +/- sample standard deviation
+NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5): 364.800 +/- 84.001
+NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5): 327.700 +/- 51.855
+NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5): 756.500 +/- 275.049
+NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5): 468.100 +/- 253.103
+<Figure size 1000x500 with 1 Axes>
+<Figure size 1000x500 with 1 Axes>
+COMPLETE phase parts1-6
+Executed notebook: $PROJECT_ROOT/outputs/full-20261101-1923/Experiments.executed.ipynb
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[2026-11-02T01:12:41.723437+00:00] 7a: executing cell 42 (movie-part7a-2)
+$CONDA_PREFIX/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]
+Loading weights:  24%|██▍       | 115/473 [00:00<00:00, 1149.12it/s]
+Loading weights:  49%|████▊     | 230/473 [00:00<00:00, 676.55it/s]
+Loading weights:  68%|██████▊   | 320/473 [00:00<00:00, 678.26it/s]
+Loading weights:  85%|████████▍ | 400/473 [00:00<00:00, 713.36it/s]
+Loading weights: 100%|██████████| 473/473 [00:00<00:00, 795.56it/s]
+Qwen3_5ForConditionalGeneration(
+  (model): Qwen3_5Model(
+    (visual): Qwen3_5VisionModel(
+      (patch_embed): Qwen3_5VisionPatchEmbed(
+        (proj): Conv3d(3, 768, kernel_size=(2, 16, 16), stride=(2, 16, 16))
+      )
+      (pos_embed): Embedding(2304, 768)
+      (rotary_pos_emb): Qwen3_5VisionRotaryEmbedding()
+      (blocks): ModuleList(
+        (0-11): 12 x Qwen3_5VisionBlock(
+          (norm1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+          (norm2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+          (attn): Qwen3_5VisionAttention(
+            (qkv): Linear(in_features=768, out_features=2304, bias=True)
+            (proj): Linear(in_features=768, out_features=768, bias=True)
+          )
+          (mlp): Qwen3_5VisionMLP(
+            (linear_fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (linear_fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (act_fn): GELUTanh()
+          )
+        )
+      )
+      (merger): Qwen3_5VisionPatchMerger(
+        (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+        (linear_fc1): Linear(in_features=3072, out_features=3072, bias=True)
+        (act_fn): GELU(approximate='none')
+        (linear_fc2): Linear(in_features=3072, out_features=1024, bias=True)
+      )
+    )
+    (language_model): Qwen3_5TextModel(
+      (embed_tokens): Embedding(248320, 1024)
+      (layers): ModuleList(
+        (0-2): 3 x Qwen3_5DecoderLayer(
+          (linear_attn): Qwen3_5GatedDeltaNet(
+            (act): SiLUActivation()
+            (conv1d): Conv1d(6144, 6144, kernel_size=(4,), stride=(1,), padding=(3,), groups=6144, bias=False)
+            (norm): Qwen3_5RMSNormGated()
+            (out_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (in_proj_qkv): Linear(in_features=1024, out_features=6144, bias=False)
+            (in_proj_z): Linear(in_features=1024, out_features=2048, bias=False)
+            (in_proj_b): Linear(in_features=1024, out_features=16, bias=False)
+            (in_proj_a): Linear(in_features=1024, out_features=16, bias=False)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (3): Qwen3_5DecoderLayer(
+          (self_attn): Qwen3_5Attention(
+            (q_proj): Linear(in_features=1024, out_features=4096, bias=False)
+            (k_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (v_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (q_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+            (k_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (4-6): 3 x Qwen3_5DecoderLayer(
+          (linear_attn): Qwen3_5GatedDeltaNet(
+            (act): SiLUActivation()
+            (conv1d): Conv1d(6144, 6144, kernel_size=(4,), stride=(1,), padding=(3,), groups=6144, bias=False)
+            (norm): Qwen3_5RMSNormGated()
+            (out_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (in_proj_qkv): Linear(in_features=1024, out_features=6144, bias=False)
+            (in_proj_z): Linear(in_features=1024, out_features=2048, bias=False)
+            (in_proj_b): Linear(in_features=1024, out_features=16, bias=False)
+            (in_proj_a): Linear(in_features=1024, out_features=16, bias=False)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (7): Qwen3_5DecoderLayer(
+          (self_attn): Qwen3_5Attention(
+            (q_proj): Linear(in_features=1024, out_features=4096, bias=False)
+            (k_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (v_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (q_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+            (k_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (8-10): 3 x Qwen3_5DecoderLayer(
+          (linear_attn): Qwen3_5GatedDeltaNet(
+            (act): SiLUActivation()
+            (conv1d): Conv1d(6144, 6144, kernel_size=(4,), stride=(1,), padding=(3,), groups=6144, bias=False)
+            (norm): Qwen3_5RMSNormGated()
+            (out_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (in_proj_qkv): Linear(in_features=1024, out_features=6144, bias=False)
+            (in_proj_z): Linear(in_features=1024, out_features=2048, bias=False)
+            (in_proj_b): Linear(in_features=1024, out_features=16, bias=False)
+            (in_proj_a): Linear(in_features=1024, out_features=16, bias=False)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (11): Qwen3_5DecoderLayer(
+          (self_attn): Qwen3_5Attention(
+            (q_proj): Linear(in_features=1024, out_features=4096, bias=False)
+            (k_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (v_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (q_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+            (k_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (12-14): 3 x Qwen3_5DecoderLayer(
+          (linear_attn): Qwen3_5GatedDeltaNet(
+            (act): SiLUActivation()
+            (conv1d): Conv1d(6144, 6144, kernel_size=(4,), stride=(1,), padding=(3,), groups=6144, bias=False)
+            (norm): Qwen3_5RMSNormGated()
+            (out_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (in_proj_qkv): Linear(in_features=1024, out_features=6144, bias=False)
+            (in_proj_z): Linear(in_features=1024, out_features=2048, bias=False)
+            (in_proj_b): Linear(in_features=1024, out_features=16, bias=False)
+            (in_proj_a): Linear(in_features=1024, out_features=16, bias=False)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (15): Qwen3_5DecoderLayer(
+          (self_attn): Qwen3_5Attention(
+            (q_proj): Linear(in_features=1024, out_features=4096, bias=False)
+            (k_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (v_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (q_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+            (k_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (16-18): 3 x Qwen3_5DecoderLayer(
+          (linear_attn): Qwen3_5GatedDeltaNet(
+            (act): SiLUActivation()
+            (conv1d): Conv1d(6144, 6144, kernel_size=(4,), stride=(1,), padding=(3,), groups=6144, bias=False)
+            (norm): Qwen3_5RMSNormGated()
+            (out_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (in_proj_qkv): Linear(in_features=1024, out_features=6144, bias=False)
+            (in_proj_z): Linear(in_features=1024, out_features=2048, bias=False)
+            (in_proj_b): Linear(in_features=1024, out_features=16, bias=False)
+            (in_proj_a): Linear(in_features=1024, out_features=16, bias=False)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (19): Qwen3_5DecoderLayer(
+          (self_attn): Qwen3_5Attention(
+            (q_proj): Linear(in_features=1024, out_features=4096, bias=False)
+            (k_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (v_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (q_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+            (k_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (20-22): 3 x Qwen3_5DecoderLayer(
+          (linear_attn): Qwen3_5GatedDeltaNet(
+            (act): SiLUActivation()
+            (conv1d): Conv1d(6144, 6144, kernel_size=(4,), stride=(1,), padding=(3,), groups=6144, bias=False)
+            (norm): Qwen3_5RMSNormGated()
+            (out_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (in_proj_qkv): Linear(in_features=1024, out_features=6144, bias=False)
+            (in_proj_z): Linear(in_features=1024, out_features=2048, bias=False)
+            (in_proj_b): Linear(in_features=1024, out_features=16, bias=False)
+            (in_proj_a): Linear(in_features=1024, out_features=16, bias=False)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+        (23): Qwen3_5DecoderLayer(
+          (self_attn): Qwen3_5Attention(
+            (q_proj): Linear(in_features=1024, out_features=4096, bias=False)
+            (k_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (v_proj): Linear(in_features=1024, out_features=512, bias=False)
+            (o_proj): Linear(in_features=2048, out_features=1024, bias=False)
+            (q_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+            (k_norm): Qwen3_5RMSNorm((256,), eps=1e-06)
+          )
+          (mlp): Qwen3_5MLP(
+            (gate_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (up_proj): Linear(in_features=1024, out_features=3584, bias=False)
+            (down_proj): Linear(in_features=3584, out_features=1024, bias=False)
+            (act_fn): SiLUActivation()
+          )
+          (input_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+          (post_attention_layernorm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+        )
+      )
+      (norm): Qwen3_5RMSNorm((1024,), eps=1e-06)
+      (rotary_emb): Qwen3_5TextRotaryEmbedding()
+    )
+  )
+  (lm_head): Linear(in_features=1024, out_features=248320, bias=False)
+)
+[2026-11-02T01:13:18.340258+00:00] 7a: executing cell 44 (movie-part7a-4)
+[2026-11-02T01:13:18.455794+00:00] 7a: executing cell 45 (movie-part7a-5)
+[2026-11-02T01:13:18.594554+00:00] 7a: executing cell 48 (movie-part7a-7)
+[2026-11-02T01:13:18.746456+00:00] 7a: executing cell 50 (movie-part7a-9)
+Movie A: run 1/3, round 1/1000 saved.
+LLM progress movie_reward: 100 successful calls, 17.9s inside reward generation
+LLM progress movie_reward: 200 successful calls, 33.4s inside reward generation
+LLM progress movie_reward: 300 successful calls, 47.7s inside reward generation
+Movie A: run 1/3, round 100/1000 saved.
+LLM progress movie_reward: 400 successful calls, 57.4s inside reward generation
+LLM progress movie_reward: 500 successful calls, 67.1s inside reward generation
+LLM progress movie_reward: 600 successful calls, 76.8s inside reward generation
+Movie A: run 1/3, round 200/1000 saved.
+LLM progress movie_reward: 700 successful calls, 86.5s inside reward generation
+LLM progress movie_reward: 800 successful calls, 96.2s inside reward generation
+LLM progress movie_reward: 900 successful calls, 105.9s inside reward generation
+LLM progress movie_reward: 1000 successful calls, 115.6s inside reward generation
+Movie A: run 1/3, round 300/1000 saved.
+LLM progress movie_reward: 1100 successful calls, 125.3s inside reward generation
+LLM progress movie_reward: 1200 successful calls, 135.0s inside reward generation
+LLM progress movie_reward: 1300 successful calls, 144.7s inside reward generation
+Movie A: run 1/3, round 400/1000 saved.
+LLM progress movie_reward: 1400 successful calls, 154.6s inside reward generation
+LLM progress movie_reward: 1500 successful calls, 164.3s inside reward generation
+LLM progress movie_reward: 1600 successful calls, 174.0s inside reward generation
+Movie A: run 1/3, round 500/1000 saved.
+LLM progress movie_reward: 1700 successful calls, 183.8s inside reward generation
+LLM progress movie_reward: 1800 successful calls, 193.6s inside reward generation
+LLM progress movie_reward: 1900 successful calls, 209.3s inside reward generation
+Movie A: run 1/3, round 600/1000 saved.
+LLM progress movie_reward: 2000 successful calls, 223.6s inside reward generation
+LLM progress movie_reward: 2100 successful calls, 233.4s inside reward generation
+LLM progress movie_reward: 2200 successful calls, 243.2s inside reward generation
+Movie A: run 1/3, round 700/1000 saved.
+LLM progress movie_reward: 2300 successful calls, 253.0s inside reward generation
+LLM progress movie_reward: 2400 successful calls, 262.9s inside reward generation
+LLM progress movie_reward: 2500 successful calls, 272.8s inside reward generation
+Movie A: run 1/3, round 800/1000 saved.
+LLM progress movie_reward: 2600 successful calls, 282.6s inside reward generation
+LLM progress movie_reward: 2700 successful calls, 292.3s inside reward generation
+LLM progress movie_reward: 2800 successful calls, 302.2s inside reward generation
+Movie A: run 1/3, round 900/1000 saved.
+LLM progress movie_reward: 2900 successful calls, 312.0s inside reward generation
+LLM progress movie_reward: 3000 successful calls, 321.7s inside reward generation
+LLM progress movie_reward: 3100 successful calls, 331.4s inside reward generation
+Movie A: run 1/3, round 1000/1000 saved.
+Movie A: run 2/3, round 1/1000 saved.
+LLM progress movie_reward: 3200 successful calls, 341.3s inside reward generation
+LLM progress movie_reward: 3300 successful calls, 351.1s inside reward generation
+LLM progress movie_reward: 3400 successful calls, 361.0s inside reward generation
+Movie A: run 2/3, round 100/1000 saved.
+LLM progress movie_reward: 3500 successful calls, 371.0s inside reward generation
+LLM progress movie_reward: 3600 successful calls, 380.7s inside reward generation
+LLM progress movie_reward: 3700 successful calls, 390.6s inside reward generation
+Movie A: run 2/3, round 200/1000 saved.
+LLM progress movie_reward: 3800 successful calls, 400.6s inside reward generation
+LLM progress movie_reward: 3900 successful calls, 410.4s inside reward generation
+LLM progress movie_reward: 4000 successful calls, 420.2s inside reward generation
+Movie A: run 2/3, round 300/1000 saved.
+LLM progress movie_reward: 4100 successful calls, 430.0s inside reward generation
+LLM progress movie_reward: 4200 successful calls, 439.8s inside reward generation
+LLM progress movie_reward: 4300 successful calls, 449.5s inside reward generation
+Movie A: run 2/3, round 400/1000 saved.
+LLM progress movie_reward: 4400 successful calls, 459.3s inside reward generation
+LLM progress movie_reward: 4500 successful calls, 469.1s inside reward generation
+LLM progress movie_reward: 4600 successful calls, 478.9s inside reward generation
+Movie A: run 2/3, round 500/1000 saved.
+LLM progress movie_reward: 4700 successful calls, 488.8s inside reward generation
+LLM progress movie_reward: 4800 successful calls, 498.6s inside reward generation
+LLM progress movie_reward: 4900 successful calls, 508.3s inside reward generation
+Movie A: run 2/3, round 600/1000 saved.
+LLM progress movie_reward: 5000 successful calls, 518.1s inside reward generation
+LLM progress movie_reward: 5100 successful calls, 527.9s inside reward generation
+LLM progress movie_reward: 5200 successful calls, 537.7s inside reward generation
+Movie A: run 2/3, round 700/1000 saved.
+LLM progress movie_reward: 5300 successful calls, 547.5s inside reward generation
+LLM progress movie_reward: 5400 successful calls, 557.3s inside reward generation
+LLM progress movie_reward: 5500 successful calls, 567.1s inside reward generation
+Movie A: run 2/3, round 800/1000 saved.
+LLM progress movie_reward: 5600 successful calls, 577.0s inside reward generation
+LLM progress movie_reward: 5700 successful calls, 587.0s inside reward generation
+LLM progress movie_reward: 5800 successful calls, 596.8s inside reward generation
+Movie A: run 2/3, round 900/1000 saved.
+LLM progress movie_reward: 5900 successful calls, 606.6s inside reward generation
+LLM progress movie_reward: 6000 successful calls, 616.4s inside reward generation
+LLM progress movie_reward: 6100 successful calls, 626.2s inside reward generation
+Movie A: run 2/3, round 1000/1000 saved.
+Movie A: run 3/3, round 1/1000 saved.
+LLM progress movie_reward: 6200 successful calls, 636.0s inside reward generation
+LLM progress movie_reward: 6300 successful calls, 645.9s inside reward generation
+LLM progress movie_reward: 6400 successful calls, 655.7s inside reward generation
+Movie A: run 3/3, round 100/1000 saved.
+LLM progress movie_reward: 6500 successful calls, 665.6s inside reward generation
+LLM progress movie_reward: 6600 successful calls, 675.4s inside reward generation
+Movie A: run 3/3, round 200/1000 saved.
+LLM progress movie_reward: 6700 successful calls, 685.2s inside reward generation
+LLM progress movie_reward: 6800 successful calls, 695.1s inside reward generation
+Movie A: run 3/3, round 300/1000 saved.
+LLM progress movie_reward: 6900 successful calls, 705.0s inside reward generation
+LLM progress movie_reward: 7000 successful calls, 714.8s inside reward generation
+LLM progress movie_reward: 7100 successful calls, 730.4s inside reward generation
+Movie A: run 3/3, round 400/1000 saved.
+LLM progress movie_reward: 7200 successful calls, 746.0s inside reward generation
+LLM progress movie_reward: 7300 successful calls, 759.1s inside reward generation
+Movie A: run 3/3, round 500/1000 saved.
+LLM progress movie_reward: 7400 successful calls, 768.8s inside reward generation
+LLM progress movie_reward: 7500 successful calls, 778.5s inside reward generation
+Movie A: run 3/3, round 600/1000 saved.
+LLM progress movie_reward: 7600 successful calls, 788.3s inside reward generation
+LLM progress movie_reward: 7700 successful calls, 798.1s inside reward generation
+Movie A: run 3/3, round 700/1000 saved.
+LLM progress movie_reward: 7800 successful calls, 808.0s inside reward generation
+LLM progress movie_reward: 7900 successful calls, 817.7s inside reward generation
+Movie A: run 3/3, round 800/1000 saved.
+LLM progress movie_reward: 8000 successful calls, 827.6s inside reward generation
+LLM progress movie_reward: 8100 successful calls, 837.3s inside reward generation
+LLM progress movie_reward: 8200 successful calls, 847.0s inside reward generation
+Movie A: run 3/3, round 900/1000 saved.
+LLM progress movie_reward: 8300 successful calls, 856.7s inside reward generation
+LLM progress movie_reward: 8400 successful calls, 866.4s inside reward generation
+Movie A: run 3/3, round 1000/1000 saved.
+[2026-11-02T01:27:54.524494+00:00] 7a: executing cell 52 (movie-part7a-11)
+Random: 490.09 ± 10.58
+Greedy: 612.05 ± 273.43
+Epsilon-greedy (0.1): 786.68 ± 34.34
+UCB (exploration=2): 718.46 ± 2.96
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T01:27:56.283990+00:00] 7a: executing cell 53 (movie-part7a-12)
+<Figure size 1100x700 with 4 Axes>
+[2026-11-02T01:27:57.334349+00:00] 7a: executing cell 55 (movie-role-b-run)
+Movie B: run 1/3, round 1/1000 saved.
+LLM progress movie_reward: 8500 successful calls, 880.0s inside reward generation
+LLM progress movie_reward: 8600 successful calls, 894.7s inside reward generation
+LLM progress movie_reward: 8700 successful calls, 904.9s inside reward generation
+Movie B: run 1/3, round 100/1000 saved.
+LLM progress movie_reward: 8800 successful calls, 915.1s inside reward generation
+LLM progress movie_reward: 8900 successful calls, 925.0s inside reward generation
+LLM progress movie_reward: 9000 successful calls, 934.9s inside reward generation
+LLM progress movie_reward: 9100 successful calls, 945.0s inside reward generation
+Movie B: run 1/3, round 200/1000 saved.
+LLM progress movie_reward: 9200 successful calls, 955.2s inside reward generation
+LLM progress movie_reward: 9300 successful calls, 965.2s inside reward generation
+LLM progress movie_reward: 9400 successful calls, 975.3s inside reward generation
+Movie B: run 1/3, round 300/1000 saved.
+LLM progress movie_reward: 9500 successful calls, 985.5s inside reward generation
+LLM progress movie_reward: 9600 successful calls, 995.6s inside reward generation
+LLM progress movie_reward: 9700 successful calls, 1005.7s inside reward generation
+Movie B: run 1/3, round 400/1000 saved.
+LLM progress movie_reward: 9800 successful calls, 1015.7s inside reward generation
+LLM progress movie_reward: 9900 successful calls, 1025.9s inside reward generation
+LLM progress movie_reward: 10000 successful calls, 1036.0s inside reward generation
+Movie B: run 1/3, round 500/1000 saved.
+LLM progress movie_reward: 10100 successful calls, 1046.1s inside reward generation
+LLM progress movie_reward: 10200 successful calls, 1056.2s inside reward generation
+LLM progress movie_reward: 10300 successful calls, 1066.3s inside reward generation
+Movie B: run 1/3, round 600/1000 saved.
+LLM progress movie_reward: 10400 successful calls, 1076.5s inside reward generation
+LLM progress movie_reward: 10500 successful calls, 1086.6s inside reward generation
+LLM progress movie_reward: 10600 successful calls, 1096.7s inside reward generation
+LLM progress movie_reward: 10700 successful calls, 1106.8s inside reward generation
+Movie B: run 1/3, round 700/1000 saved.
+LLM progress movie_reward: 10800 successful calls, 1117.1s inside reward generation
+LLM progress movie_reward: 10900 successful calls, 1127.1s inside reward generation
+LLM progress movie_reward: 11000 successful calls, 1137.2s inside reward generation
+Movie B: run 1/3, round 800/1000 saved.
+LLM progress movie_reward: 11100 successful calls, 1147.5s inside reward generation
+LLM progress movie_reward: 11200 successful calls, 1157.6s inside reward generation
+LLM progress movie_reward: 11300 successful calls, 1167.7s inside reward generation
+Movie B: run 1/3, round 900/1000 saved.
+LLM progress movie_reward: 11400 successful calls, 1177.8s inside reward generation
+LLM progress movie_reward: 11500 successful calls, 1187.9s inside reward generation
+LLM progress movie_reward: 11600 successful calls, 1198.0s inside reward generation
+Movie B: run 1/3, round 1000/1000 saved.
+Movie B: run 2/3, round 1/1000 saved.
+LLM progress movie_reward: 11700 successful calls, 1208.2s inside reward generation
+LLM progress movie_reward: 11800 successful calls, 1218.2s inside reward generation
+LLM progress movie_reward: 11900 successful calls, 1228.3s inside reward generation
+LLM progress movie_reward: 12000 successful calls, 1238.4s inside reward generation
+Movie B: run 2/3, round 100/1000 saved.
+LLM progress movie_reward: 12100 successful calls, 1248.5s inside reward generation
+LLM progress movie_reward: 12200 successful calls, 1258.6s inside reward generation
+LLM progress movie_reward: 12300 successful calls, 1268.7s inside reward generation
+Movie B: run 2/3, round 200/1000 saved.
+LLM progress movie_reward: 12400 successful calls, 1278.9s inside reward generation
+LLM progress movie_reward: 12500 successful calls, 1288.9s inside reward generation
+LLM progress movie_reward: 12600 successful calls, 1299.0s inside reward generation
+LLM progress movie_reward: 12700 successful calls, 1309.0s inside reward generation
+Movie B: run 2/3, round 300/1000 saved.
+LLM progress movie_reward: 12800 successful calls, 1319.1s inside reward generation
+LLM progress movie_reward: 12900 successful calls, 1329.0s inside reward generation
+LLM progress movie_reward: 13000 successful calls, 1339.1s inside reward generation
+Movie B: run 2/3, round 400/1000 saved.
+LLM progress movie_reward: 13100 successful calls, 1349.2s inside reward generation
+LLM progress movie_reward: 13200 successful calls, 1359.3s inside reward generation
+LLM progress movie_reward: 13300 successful calls, 1369.3s inside reward generation
+Movie B: run 2/3, round 500/1000 saved.
+LLM progress movie_reward: 13400 successful calls, 1379.5s inside reward generation
+LLM progress movie_reward: 13500 successful calls, 1389.6s inside reward generation
+LLM progress movie_reward: 13600 successful calls, 1399.7s inside reward generation
+LLM progress movie_reward: 13700 successful calls, 1409.8s inside reward generation
+Movie B: run 2/3, round 600/1000 saved.
+LLM progress movie_reward: 13800 successful calls, 1419.9s inside reward generation
+LLM progress movie_reward: 13900 successful calls, 1429.9s inside reward generation
+LLM progress movie_reward: 14000 successful calls, 1440.0s inside reward generation
+Movie B: run 2/3, round 700/1000 saved.
+LLM progress movie_reward: 14100 successful calls, 1450.2s inside reward generation
+LLM progress movie_reward: 14200 successful calls, 1465.1s inside reward generation
+LLM progress movie_reward: 14300 successful calls, 1475.3s inside reward generation
+Movie B: run 2/3, round 800/1000 saved.
+LLM progress movie_reward: 14400 successful calls, 1485.5s inside reward generation
+LLM progress movie_reward: 14500 successful calls, 1495.6s inside reward generation
+LLM progress movie_reward: 14600 successful calls, 1505.7s inside reward generation
+LLM progress movie_reward: 14700 successful calls, 1515.8s inside reward generation
+Movie B: run 2/3, round 900/1000 saved.
+LLM progress movie_reward: 14800 successful calls, 1525.9s inside reward generation
+LLM progress movie_reward: 14900 successful calls, 1536.0s inside reward generation
+LLM progress movie_reward: 15000 successful calls, 1546.0s inside reward generation
+Movie B: run 2/3, round 1000/1000 saved.
+Movie B: run 3/3, round 1/1000 saved.
+LLM progress movie_reward: 15100 successful calls, 1556.3s inside reward generation
+LLM progress movie_reward: 15200 successful calls, 1566.5s inside reward generation
+LLM progress movie_reward: 15300 successful calls, 1576.6s inside reward generation
+LLM progress movie_reward: 15400 successful calls, 1586.7s inside reward generation
+Movie B: run 3/3, round 100/1000 saved.
+LLM progress movie_reward: 15500 successful calls, 1596.8s inside reward generation
+LLM progress movie_reward: 15600 successful calls, 1606.9s inside reward generation
+LLM progress movie_reward: 15700 successful calls, 1617.0s inside reward generation
+Movie B: run 3/3, round 200/1000 saved.
+LLM progress movie_reward: 15800 successful calls, 1627.1s inside reward generation
+LLM progress movie_reward: 15900 successful calls, 1640.6s inside reward generation
+LLM progress movie_reward: 16000 successful calls, 1650.3s inside reward generation
+Movie B: run 3/3, round 300/1000 saved.
+LLM progress movie_reward: 16100 successful calls, 1660.0s inside reward generation
+LLM progress movie_reward: 16200 successful calls, 1669.7s inside reward generation
+LLM progress movie_reward: 16300 successful calls, 1679.4s inside reward generation
+LLM progress movie_reward: 16400 successful calls, 1689.2s inside reward generation
+Movie B: run 3/3, round 400/1000 saved.
+LLM progress movie_reward: 16500 successful calls, 1705.5s inside reward generation
+LLM progress movie_reward: 16600 successful calls, 1719.5s inside reward generation
+LLM progress movie_reward: 16700 successful calls, 1729.6s inside reward generation
+Movie B: run 3/3, round 500/1000 saved.
+LLM progress movie_reward: 16800 successful calls, 1739.8s inside reward generation
+LLM progress movie_reward: 16900 successful calls, 1749.9s inside reward generation
+LLM progress movie_reward: 17000 successful calls, 1759.9s inside reward generation
+Movie B: run 3/3, round 600/1000 saved.
+LLM progress movie_reward: 17100 successful calls, 1770.0s inside reward generation
+LLM progress movie_reward: 17200 successful calls, 1780.2s inside reward generation
+LLM progress movie_reward: 17300 successful calls, 1790.2s inside reward generation
+LLM progress movie_reward: 17400 successful calls, 1800.4s inside reward generation
+Movie B: run 3/3, round 700/1000 saved.
+LLM progress movie_reward: 17500 successful calls, 1810.5s inside reward generation
+LLM progress movie_reward: 17600 successful calls, 1820.6s inside reward generation
+LLM progress movie_reward: 17700 successful calls, 1830.7s inside reward generation
+LLM progress movie_reward: 17800 successful calls, 1840.8s inside reward generation
+Movie B: run 3/3, round 800/1000 saved.
+LLM progress movie_reward: 17900 successful calls, 1850.8s inside reward generation
+LLM progress movie_reward: 18000 successful calls, 1860.8s inside reward generation
+LLM progress movie_reward: 18100 successful calls, 1870.8s inside reward generation
+Movie B: run 3/3, round 900/1000 saved.
+LLM progress movie_reward: 18200 successful calls, 1880.9s inside reward generation
+LLM progress movie_reward: 18300 successful calls, 1891.0s inside reward generation
+LLM progress movie_reward: 18400 successful calls, 1901.2s inside reward generation
+Movie B: run 3/3, round 1000/1000 saved.
+[2026-11-02T01:45:21.988127+00:00] 7a: executing cell 56 (movie-role-b-rewards)
+Random: 627.69 ± 9.41
+Greedy: 565.43 ± 187.63
+Epsilon-greedy (0.1): 788.35 ± 18.56
+UCB (exploration=2): 749.91 ± 6.33
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T01:45:22.730133+00:00] 7a: executing cell 57 (movie-role-b-selections)
+<Figure size 1100x700 with 4 Axes>
+COMPLETE phase 7a
+Executed notebook: $PROJECT_ROOT/outputs/full-20261101-1923/Experiments.executed.ipynb
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[2026-11-02T01:45:49.403725+00:00] 7b: executing cell 61 (medical-part7b-models)
+$CONDA_PREFIX/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]
+Loading weights:  61%|██████    | 288/473 [00:00<00:00, 2850.16it/s]
+Loading weights: 100%|██████████| 473/473 [00:00<00:00, 2867.45it/s]
+
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]
+Loading weights:  22%|██▏       | 63/290 [00:00<00:00, 451.09it/s]
+Loading weights:  38%|███▊      | 109/290 [00:00<00:00, 246.06it/s]
+Loading weights: 100%|██████████| 290/290 [00:00<00:00, 685.90it/s]
+Qwen2Model(
+  (embed_tokens): Embedding(151936, 896)
+  (layers): ModuleList(
+    (0-23): 24 x Qwen2DecoderLayer(
+      (self_attn): Qwen2Attention(
+        (q_proj): Linear(in_features=896, out_features=896, bias=True)
+        (k_proj): Linear(in_features=896, out_features=128, bias=True)
+        (v_proj): Linear(in_features=896, out_features=128, bias=True)
+        (o_proj): Linear(in_features=896, out_features=896, bias=False)
+      )
+      (mlp): Qwen2MLP(
+        (gate_proj): Linear(in_features=896, out_features=4864, bias=False)
+        (up_proj): Linear(in_features=896, out_features=4864, bias=False)
+        (down_proj): Linear(in_features=4864, out_features=896, bias=False)
+        (act_fn): SiLUActivation()
+      )
+      (input_layernorm): Qwen2RMSNorm((896,), eps=1e-06)
+      (post_attention_layernorm): Qwen2RMSNorm((896,), eps=1e-06)
+    )
+  )
+  (norm): Qwen2RMSNorm((896,), eps=1e-06)
+  (rotary_emb): Qwen2RotaryEmbedding()
+)
+[2026-11-02T01:46:21.975487+00:00] 7b: executing cell 63 (medical-part7b-questions)
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 109353 examples [00:17, 6370.24 examples/s]
+Generating train split: 109353 examples [00:17, 6204.74 examples/s]
+
+Generating dev split: 0 examples [00:00, ? examples/s]
+Generating dev split: 2232 examples [00:00, 5917.19 examples/s]
+Generating dev split: 2232 examples [00:00, 5648.77 examples/s]
+
+Generating test split: 0 examples [00:00, ? examples/s]
+Generating test split: 777 examples [00:00, 6310.48 examples/s]
+Generating test split: 777 examples [00:00, 4440.76 examples/s]
+
+Filter:   0%|          | 0/109353 [00:00<?, ? examples/s]
+Filter:   1%|          | 1000/109353 [00:00<00:11, 9820.86 examples/s]
+Filter:   4%|▎         | 4000/109353 [00:00<00:06, 16450.03 examples/s]
+Filter:   7%|▋         | 8000/109353 [00:00<00:05, 18936.75 examples/s]
+Filter:  10%|█         | 11000/109353 [00:00<00:05, 19374.91 examples/s]
+Filter:  13%|█▎        | 14000/109353 [00:00<00:04, 19891.16 examples/s]
+Filter:  16%|█▋        | 18000/109353 [00:00<00:04, 20500.04 examples/s]
+Filter:  20%|██        | 22000/109353 [00:01<00:04, 21048.57 examples/s]
+Filter:  24%|██▍       | 26000/109353 [00:01<00:03, 21412.38 examples/s]
+Filter:  27%|██▋       | 30000/109353 [00:01<00:03, 21421.70 examples/s]
+Filter:  31%|███       | 34000/109353 [00:01<00:03, 21357.19 examples/s]
+Filter:  35%|███▍      | 38000/109353 [00:01<00:03, 19993.42 examples/s]
+Filter:  38%|███▊      | 42000/109353 [00:02<00:03, 20196.77 examples/s]
+Filter:  41%|████      | 45000/109353 [00:02<00:03, 20252.81 examples/s]
+Filter:  44%|████▍     | 48000/109353 [00:02<00:02, 20484.33 examples/s]
+Filter:  48%|████▊     | 52000/109353 [00:02<00:02, 20859.26 examples/s]
+Filter:  51%|█████     | 56000/109353 [00:02<00:02, 21513.01 examples/s]
+Filter:  54%|█████▍    | 59000/109353 [00:02<00:02, 21108.30 examples/s]
+Filter:  58%|█████▊    | 63000/109353 [00:03<00:02, 21065.43 examples/s]
+Filter:  60%|██████    | 66000/109353 [00:03<00:02, 21132.69 examples/s]
+Filter:  63%|██████▎   | 69000/109353 [00:03<00:01, 20362.67 examples/s]
+Filter:  66%|██████▌   | 72000/109353 [00:03<00:01, 20533.72 examples/s]
+Filter:  69%|██████▊   | 75000/109353 [00:03<00:01, 19069.07 examples/s]
+Filter:  72%|███████▏  | 79000/109353 [00:03<00:01, 20057.97 examples/s]
+Filter:  75%|███████▍  | 82000/109353 [00:04<00:01, 19999.18 examples/s]
+Filter:  78%|███████▊  | 85000/109353 [00:04<00:01, 20210.51 examples/s]
+Filter:  80%|████████  | 88000/109353 [00:04<00:01, 20026.31 examples/s]
+Filter:  83%|████████▎ | 91000/109353 [00:04<00:00, 20094.54 examples/s]
+Filter:  87%|████████▋ | 95000/109353 [00:04<00:00, 18605.40 examples/s]
+Filter:  90%|████████▉ | 98000/109353 [00:04<00:00, 18969.89 examples/s]
+Filter:  92%|█████████▏| 101000/109353 [00:05<00:00, 19440.64 examples/s]
+Filter:  95%|█████████▌| 104000/109353 [00:05<00:00, 19527.72 examples/s]
+Filter:  97%|█████████▋| 106000/109353 [00:05<00:00, 18021.17 examples/s]
+Filter: 100%|█████████▉| 109000/109353 [00:05<00:00, 18726.53 examples/s]
+Filter: 100%|██████████| 109353/109353 [00:05<00:00, 19916.64 examples/s]
+
+Filter:   0%|          | 0/2232 [00:00<?, ? examples/s]
+Filter: 100%|██████████| 2232/2232 [00:00<00:00, 32103.12 examples/s]
+
+Filter:   0%|          | 0/777 [00:00<?, ? examples/s]
+Filter: 100%|██████████| 777/777 [00:00<00:00, 15188.33 examples/s]
+[2026-11-02T01:46:53.546012+00:00] 7b: executing cell 64 (medical-part7b-features)
+MEDICAL_SETUP_VALIDATED: five questions, 17 responses, 17-dimensional features.
+[2026-11-02T01:46:54.685846+00:00] 7b: executing cell 65 (medical-part7b-reward)
+[2026-11-02T01:46:54.843649+00:00] 7b: executing cell 68 (medical-part7b-agents)
+[2026-11-02T01:46:54.999011+00:00] 7b: executing cell 70 (medical-part7b-experiment)
+Medical A: run 1/3, round 1/1000 saved.
+LLM progress patient_reward: 100 successful calls, 27.1s inside reward generation
+LLM progress patient_reward: 200 successful calls, 54.1s inside reward generation
+Medical A: run 1/3, round 100/1000 saved.
+LLM progress patient_reward: 300 successful calls, 79.7s inside reward generation
+LLM progress patient_reward: 400 successful calls, 97.8s inside reward generation
+Medical A: run 1/3, round 200/1000 saved.
+LLM progress patient_reward: 500 successful calls, 115.5s inside reward generation
+LLM progress patient_reward: 600 successful calls, 133.3s inside reward generation
+Medical A: run 1/3, round 300/1000 saved.
+LLM progress patient_reward: 700 successful calls, 151.2s inside reward generation
+LLM progress patient_reward: 800 successful calls, 169.3s inside reward generation
+Medical A: run 1/3, round 400/1000 saved.
+LLM progress patient_reward: 900 successful calls, 187.0s inside reward generation
+LLM progress patient_reward: 1000 successful calls, 204.0s inside reward generation
+Medical A: run 1/3, round 500/1000 saved.
+LLM progress patient_reward: 1100 successful calls, 220.4s inside reward generation
+LLM progress patient_reward: 1200 successful calls, 236.9s inside reward generation
+Medical A: run 1/3, round 600/1000 saved.
+LLM progress patient_reward: 1300 successful calls, 253.3s inside reward generation
+LLM progress patient_reward: 1400 successful calls, 269.9s inside reward generation
+Medical A: run 1/3, round 700/1000 saved.
+LLM progress patient_reward: 1500 successful calls, 286.2s inside reward generation
+LLM progress patient_reward: 1600 successful calls, 302.7s inside reward generation
+LLM progress patient_reward: 1700 successful calls, 319.9s inside reward generation
+Medical A: run 1/3, round 800/1000 saved.
+LLM progress patient_reward: 1800 successful calls, 337.6s inside reward generation
+LLM progress patient_reward: 1900 successful calls, 355.2s inside reward generation
+Medical A: run 1/3, round 900/1000 saved.
+LLM progress patient_reward: 2000 successful calls, 372.6s inside reward generation
+LLM progress patient_reward: 2100 successful calls, 390.8s inside reward generation
+Medical A: run 1/3, round 1000/1000 saved.
+Medical A: run 2/3, round 1/1000 saved.
+LLM progress patient_reward: 2200 successful calls, 408.8s inside reward generation
+LLM progress patient_reward: 2300 successful calls, 427.1s inside reward generation
+Medical A: run 2/3, round 100/1000 saved.
+LLM progress patient_reward: 2400 successful calls, 445.1s inside reward generation
+LLM progress patient_reward: 2500 successful calls, 462.7s inside reward generation
+Medical A: run 2/3, round 200/1000 saved.
+LLM progress patient_reward: 2600 successful calls, 480.1s inside reward generation
+LLM progress patient_reward: 2700 successful calls, 497.0s inside reward generation
+Medical A: run 2/3, round 300/1000 saved.
+LLM progress patient_reward: 2800 successful calls, 514.2s inside reward generation
+LLM progress patient_reward: 2900 successful calls, 531.1s inside reward generation
+LLM progress patient_reward: 3000 successful calls, 548.5s inside reward generation
+Medical A: run 2/3, round 400/1000 saved.
+LLM progress patient_reward: 3100 successful calls, 565.8s inside reward generation
+LLM progress patient_reward: 3200 successful calls, 582.6s inside reward generation
+Medical A: run 2/3, round 500/1000 saved.
+LLM progress patient_reward: 3300 successful calls, 599.3s inside reward generation
+LLM progress patient_reward: 3400 successful calls, 616.1s inside reward generation
+Medical A: run 2/3, round 600/1000 saved.
+LLM progress patient_reward: 3500 successful calls, 632.4s inside reward generation
+LLM progress patient_reward: 3600 successful calls, 648.8s inside reward generation
+Medical A: run 2/3, round 700/1000 saved.
+LLM progress patient_reward: 3700 successful calls, 665.4s inside reward generation
+LLM progress patient_reward: 3800 successful calls, 681.9s inside reward generation
+Medical A: run 2/3, round 800/1000 saved.
+LLM progress patient_reward: 3900 successful calls, 698.1s inside reward generation
+LLM progress patient_reward: 4000 successful calls, 714.2s inside reward generation
+Medical A: run 2/3, round 900/1000 saved.
+LLM progress patient_reward: 4100 successful calls, 730.5s inside reward generation
+LLM progress patient_reward: 4200 successful calls, 746.7s inside reward generation
+Medical A: run 2/3, round 1000/1000 saved.
+Medical A: run 3/3, round 1/1000 saved.
+LLM progress patient_reward: 4300 successful calls, 763.1s inside reward generation
+LLM progress patient_reward: 4400 successful calls, 779.1s inside reward generation
+LLM progress patient_reward: 4500 successful calls, 795.4s inside reward generation
+Medical A: run 3/3, round 100/1000 saved.
+LLM progress patient_reward: 4600 successful calls, 811.9s inside reward generation
+LLM progress patient_reward: 4700 successful calls, 828.2s inside reward generation
+Medical A: run 3/3, round 200/1000 saved.
+LLM progress patient_reward: 4800 successful calls, 844.5s inside reward generation
+LLM progress patient_reward: 4900 successful calls, 860.8s inside reward generation
+Medical A: run 3/3, round 300/1000 saved.
+LLM progress patient_reward: 5000 successful calls, 882.9s inside reward generation
+LLM progress patient_reward: 5100 successful calls, 908.1s inside reward generation
+Medical A: run 3/3, round 400/1000 saved.
+LLM progress patient_reward: 5200 successful calls, 933.2s inside reward generation
+LLM progress patient_reward: 5300 successful calls, 949.0s inside reward generation
+Medical A: run 3/3, round 500/1000 saved.
+LLM progress patient_reward: 5400 successful calls, 964.9s inside reward generation
+LLM progress patient_reward: 5500 successful calls, 980.7s inside reward generation
+Medical A: run 3/3, round 600/1000 saved.
+LLM progress patient_reward: 5600 successful calls, 996.5s inside reward generation
+LLM progress patient_reward: 5700 successful calls, 1012.7s inside reward generation
+Medical A: run 3/3, round 700/1000 saved.
+LLM progress patient_reward: 5800 successful calls, 1037.3s inside reward generation
+LLM progress patient_reward: 5900 successful calls, 1063.6s inside reward generation
+LLM progress patient_reward: 6000 successful calls, 1089.4s inside reward generation
+Medical A: run 3/3, round 800/1000 saved.
+LLM progress patient_reward: 6100 successful calls, 1115.0s inside reward generation
+LLM progress patient_reward: 6200 successful calls, 1138.4s inside reward generation
+Medical A: run 3/3, round 900/1000 saved.
+LLM progress patient_reward: 6300 successful calls, 1154.5s inside reward generation
+LLM progress patient_reward: 6400 successful calls, 1170.4s inside reward generation
+Medical A: run 3/3, round 1000/1000 saved.
+[2026-11-02T02:06:34.407168+00:00] 7b: executing cell 72 (medical-part7b-results)
+Random: 756.87 ± 5.27
+LinUCB (alpha=1, lambda=1): 802.57 ± 5.78
+LinTS (nu=1, lambda=1): 773.03 ± 2.62
+<Figure size 1000x500 with 1 Axes>
+[2026-11-02T02:06:36.024429+00:00] 7b: executing cell 74 (medical-profile-b-run)
+Medical B: run 1/3, round 1/1000 saved.
+LLM progress patient_reward: 6500 successful calls, 1193.4s inside reward generation
+LLM progress patient_reward: 6600 successful calls, 1219.9s inside reward generation
+Medical B: run 1/3, round 100/1000 saved.
+LLM progress patient_reward: 6700 successful calls, 1241.3s inside reward generation
+LLM progress patient_reward: 6800 successful calls, 1257.7s inside reward generation
+Medical B: run 1/3, round 200/1000 saved.
+LLM progress patient_reward: 6900 successful calls, 1274.0s inside reward generation
+LLM progress patient_reward: 7000 successful calls, 1290.2s inside reward generation
+Medical B: run 1/3, round 300/1000 saved.
+LLM progress patient_reward: 7100 successful calls, 1306.4s inside reward generation
+LLM progress patient_reward: 7200 successful calls, 1322.9s inside reward generation
+Medical B: run 1/3, round 400/1000 saved.
+LLM progress patient_reward: 7300 successful calls, 1339.4s inside reward generation
+LLM progress patient_reward: 7400 successful calls, 1355.8s inside reward generation
+Medical B: run 1/3, round 500/1000 saved.
+LLM progress patient_reward: 7500 successful calls, 1372.1s inside reward generation
+LLM progress patient_reward: 7600 successful calls, 1388.8s inside reward generation
+LLM progress patient_reward: 7700 successful calls, 1405.0s inside reward generation
+Medical B: run 1/3, round 600/1000 saved.
+LLM progress patient_reward: 7800 successful calls, 1421.5s inside reward generation
+LLM progress patient_reward: 7900 successful calls, 1438.1s inside reward generation
+Medical B: run 1/3, round 700/1000 saved.
+LLM progress patient_reward: 8000 successful calls, 1454.6s inside reward generation
+LLM progress patient_reward: 8100 successful calls, 1471.0s inside reward generation
+Medical B: run 1/3, round 800/1000 saved.
+LLM progress patient_reward: 8200 successful calls, 1487.6s inside reward generation
+LLM progress patient_reward: 8300 successful calls, 1504.0s inside reward generation
+Medical B: run 1/3, round 900/1000 saved.
+LLM progress patient_reward: 8400 successful calls, 1520.4s inside reward generation
+LLM progress patient_reward: 8500 successful calls, 1536.8s inside reward generation
+Medical B: run 1/3, round 1000/1000 saved.
+Medical B: run 2/3, round 1/1000 saved.
+LLM progress patient_reward: 8600 successful calls, 1553.0s inside reward generation
+LLM progress patient_reward: 8700 successful calls, 1569.4s inside reward generation
+Medical B: run 2/3, round 100/1000 saved.
+LLM progress patient_reward: 8800 successful calls, 1585.8s inside reward generation
+LLM progress patient_reward: 8900 successful calls, 1602.1s inside reward generation
+Medical B: run 2/3, round 200/1000 saved.
+LLM progress patient_reward: 9000 successful calls, 1618.4s inside reward generation
+LLM progress patient_reward: 9100 successful calls, 1634.6s inside reward generation
+Medical B: run 2/3, round 300/1000 saved.
+LLM progress patient_reward: 9200 successful calls, 1650.9s inside reward generation
+LLM progress patient_reward: 9300 successful calls, 1667.4s inside reward generation
+LLM progress patient_reward: 9400 successful calls, 1683.7s inside reward generation
+Medical B: run 2/3, round 400/1000 saved.
+LLM progress patient_reward: 9500 successful calls, 1700.0s inside reward generation
+LLM progress patient_reward: 9600 successful calls, 1716.5s inside reward generation
+Medical B: run 2/3, round 500/1000 saved.
+LLM progress patient_reward: 9700 successful calls, 1732.8s inside reward generation
+LLM progress patient_reward: 9800 successful calls, 1749.3s inside reward generation
+Medical B: run 2/3, round 600/1000 saved.
+LLM progress patient_reward: 9900 successful calls, 1765.7s inside reward generation
+LLM progress patient_reward: 10000 successful calls, 1782.0s inside reward generation
+Medical B: run 2/3, round 700/1000 saved.
+LLM progress patient_reward: 10100 successful calls, 1798.4s inside reward generation
+LLM progress patient_reward: 10200 successful calls, 1814.8s inside reward generation
+Medical B: run 2/3, round 800/1000 saved.
+LLM progress patient_reward: 10300 successful calls, 1831.2s inside reward generation
+LLM progress patient_reward: 10400 successful calls, 1847.6s inside reward generation
+Medical B: run 2/3, round 900/1000 saved.
+LLM progress patient_reward: 10500 successful calls, 1864.1s inside reward generation
+LLM progress patient_reward: 10600 successful calls, 1880.5s inside reward generation
+Medical B: run 2/3, round 1000/1000 saved.
+Medical B: run 3/3, round 1/1000 saved.
+LLM progress patient_reward: 10700 successful calls, 1896.8s inside reward generation
+LLM progress patient_reward: 10800 successful calls, 1912.9s inside reward generation
+Medical B: run 3/3, round 100/1000 saved.
+LLM progress patient_reward: 10900 successful calls, 1929.5s inside reward generation
+LLM progress patient_reward: 11000 successful calls, 1945.8s inside reward generation
+Medical B: run 3/3, round 200/1000 saved.
+LLM progress patient_reward: 11100 successful calls, 1962.2s inside reward generation
+LLM progress patient_reward: 11200 successful calls, 1978.8s inside reward generation
+LLM progress patient_reward: 11300 successful calls, 1995.2s inside reward generation
+Medical B: run 3/3, round 300/1000 saved.
+LLM progress patient_reward: 11400 successful calls, 2011.7s inside reward generation
+LLM progress patient_reward: 11500 successful calls, 2027.7s inside reward generation
+Medical B: run 3/3, round 400/1000 saved.
+LLM progress patient_reward: 11600 successful calls, 2044.3s inside reward generation
+LLM progress patient_reward: 11700 successful calls, 2060.8s inside reward generation
+Medical B: run 3/3, round 500/1000 saved.
+LLM progress patient_reward: 11800 successful calls, 2077.3s inside reward generation
+LLM progress patient_reward: 11900 successful calls, 2093.7s inside reward generation
+Medical B: run 3/3, round 600/1000 saved.
+LLM progress patient_reward: 12000 successful calls, 2110.2s inside reward generation
+LLM progress patient_reward: 12100 successful calls, 2126.6s inside reward generation
+Medical B: run 3/3, round 700/1000 saved.
+LLM progress patient_reward: 12200 successful calls, 2143.1s inside reward generation
+LLM progress patient_reward: 12300 successful calls, 2159.6s inside reward generation
+Medical B: run 3/3, round 800/1000 saved.
+LLM progress patient_reward: 12400 successful calls, 2176.1s inside reward generation
+LLM progress patient_reward: 12500 successful calls, 2196.7s inside reward generation
+Medical B: run 3/3, round 900/1000 saved.
+LLM progress patient_reward: 12600 successful calls, 2224.6s inside reward generation
+LLM progress patient_reward: 12700 successful calls, 2252.2s inside reward generation
+Medical B: run 3/3, round 1000/1000 saved.
+[2026-11-02T02:24:50.306051+00:00] 7b: executing cell 75 (medical-profile-b-rewards)
+Random: 889.73 ± 5.98
+LinUCB (alpha=1, lambda=1): 945.73 ± 3.91
+LinTS (nu=1, lambda=1): 916.67 ± 2.24
+<Figure size 1000x500 with 1 Axes>
+COMPLETE phase 7b
+Executed notebook: $PROJECT_ROOT/outputs/full-20261101-1923/Experiments.executed.ipynb

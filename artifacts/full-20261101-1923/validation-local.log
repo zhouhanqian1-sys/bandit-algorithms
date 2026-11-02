@@ -1,0 +1,5 @@
+PASS structure: 43 code cells parse; eight headings, English content, model/profile literals preserved
+PASS linear algorithms: ridge/inverse updates, action rules, posterior sampling, one-based epsilon, resets and names
+PASS LLM runner logic: sample means/UCB, medical ridge updates, runner shapes, seeded independence and fresh per-round shared rewards
+SKIP CPU PyTorch checks: unavailable local dependencies: torch, scipy, matplotlib, sklearn, seaborn
+Validation used definitions and tiny synthetic examples only; no full experiment, model, or dataset was loaded.

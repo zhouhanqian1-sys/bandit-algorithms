@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "all_phases_validated": true,
+  "checked_at_utc": "2026-11-02T13:59:54.155016+00:00",
+  "phases": {
+    "parts1-6": {
+      "comparisons": 10,
+      "best_epsilon": "1/t",
+      "best_lmcts": "lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)",
+      "passed": true,
+      "executed_code_cells": 24,
+      "figure_pairs": 10
+    },
+    "7a": {
+      "profiles_or_roles": 2,
+      "policies": 4,
+      "N": 3,
+      "T": 1000,
+      "passed": true,
+      "executed_code_cells": 10,
+      "figure_pairs": 4
+    },
+    "7b": {
+      "profiles_or_roles": 2,
+      "policies": 3,
+      "N": 3,
+      "T": 1000,
+      "passed": true,
+      "executed_code_cells": 9,
+      "figure_pairs": 2
+    }
+  },
+  "combined_executed_code_cells": 43
+}

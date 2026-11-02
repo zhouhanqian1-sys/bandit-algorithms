@@ -1,0 +1,342 @@
+{
+  "cell_index": 38,
+  "variables": {
+    "theta": {
+      "kind": "array",
+      "key": "theta",
+      "shape": [
+        7
+      ],
+      "dtype": "float64"
+    },
+    "lin_experiment": {
+      "kind": "dict",
+      "items": {
+        "LinEpsilonGreedy(eps=0,lambda=1)": "lin_experiment__0",
+        "LinEpsilonGreedy(eps=0.1,lambda=1)": "lin_experiment__1",
+        "LinUCB(alpha=1,lambda=1,delta=0.2)": "lin_experiment__2",
+        "LinTS(prior_precision=1,delta=0.2)": "lin_experiment__3"
+      }
+    },
+    "epsilon_experiment": {
+      "kind": "dict",
+      "items": {
+        "EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2)": "epsilon_experiment__0",
+        "EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2)": "epsilon_experiment__1",
+        "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": "epsilon_experiment__2",
+        "EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2)": "epsilon_experiment__3"
+      }
+    },
+    "part2_experiment": {
+      "kind": "dict",
+      "items": {
+        "LinEpsilonGreedy(eps=0.1,lambda=1)": "part2_experiment__0",
+        "LinEpsilonGreedy(eps=0,lambda=1)": "part2_experiment__1",
+        "LinTS(prior_precision=1,delta=0.2)": "part2_experiment__2",
+        "LinUCB(alpha=1,lambda=1,delta=0.2)": "part2_experiment__3",
+        "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": "part2_experiment__4"
+      }
+    },
+    "part3_experiment": {
+      "kind": "dict",
+      "items": {
+        "LinTS(prior_precision=1,delta=0.2)": "part3_experiment__0",
+        "LinUCB(alpha=1,lambda=1,delta=0.2)": "part3_experiment__1",
+        "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": "part3_experiment__2",
+        "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": "part3_experiment__3"
+      }
+    },
+    "part4_linear_experiment": {
+      "kind": "dict",
+      "items": {
+        "LinTS(prior_precision=1,delta=0.2)": "part4_linear_experiment__0",
+        "LinUCB(alpha=1,lambda=1,delta=0.2)": "part4_linear_experiment__1",
+        "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": "part4_linear_experiment__2",
+        "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": "part4_linear_experiment__3"
+      }
+    },
+    "logistic_experiment": {
+      "kind": "dict",
+      "items": {
+        "LinTS(prior_precision=1,delta=0.2)": "logistic_experiment__0",
+        "LinUCB(alpha=1,lambda=1,delta=0.2)": "logistic_experiment__1",
+        "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": "logistic_experiment__2",
+        "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": "logistic_experiment__3"
+      }
+    },
+    "quadratic_experiment": {
+      "kind": "dict",
+      "items": {
+        "LinTS(prior_precision=1,delta=0.2)": "quadratic_experiment__0",
+        "LinUCB(alpha=1,lambda=1,delta=0.2)": "quadratic_experiment__1",
+        "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": "quadratic_experiment__2",
+        "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": "quadratic_experiment__3"
+      }
+    },
+    "quadratic_neural_results": {
+      "kind": "dict",
+      "items": {
+        "NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)": "quadratic_neural_results__0",
+        "NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)": "quadratic_neural_results__1",
+        "NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)": "quadratic_neural_results__2",
+        "NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": "quadratic_neural_results__3"
+      }
+    },
+    "shuttle_tuning_results": {
+      "kind": "dict",
+      "items": {
+        "reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": "shuttle_tuning_results__0",
+        "lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)": "shuttle_tuning_results__1",
+        "smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": "shuttle_tuning_results__2",
+        "more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10)": "shuttle_tuning_results__3"
+      }
+    },
+    "shuttle_results": {
+      "kind": "dict",
+      "items": {
+        "NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)": "shuttle_results__0",
+        "NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)": "shuttle_results__1",
+        "NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)": "shuttle_results__2",
+        "NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)": "shuttle_results__3"
+      }
+    }
+  },
+  "values": {
+    "part1_summary": {
+      "LinEpsilonGreedy(eps=0,lambda=1)": {
+        "mean": 11.432938420667323,
+        "std": 34.59365946095406
+      },
+      "LinEpsilonGreedy(eps=0.1,lambda=1)": {
+        "mean": 66.44838117547901,
+        "std": 28.175960886748623
+      },
+      "LinUCB(alpha=1,lambda=1,delta=0.2)": {
+        "mean": 42.5223291947325,
+        "std": 11.59925763971501
+      },
+      "LinTS(prior_precision=1,delta=0.2)": {
+        "mean": 34.95262552952049,
+        "std": 14.38768146293376
+      }
+    },
+    "epsilon_summary": {
+      "EpsilonLinTS(eps=0.05,prior_precision=1,delta=0.2)": {
+        "mean": 19.565719177555888,
+        "std": 32.77577500999564
+      },
+      "EpsilonLinTS(eps=1/d,prior_precision=1,delta=0.2)": {
+        "mean": 18.562924784529816,
+        "std": 12.835329893782966
+      },
+      "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": {
+        "mean": 14.931224006356338,
+        "std": 58.035523086770766
+      },
+      "EpsilonLinTS(eps=0.2,prior_precision=1,delta=0.2)": {
+        "mean": 23.023089609603694,
+        "std": 21.766026605452303
+      }
+    },
+    "best_epsilon_name": "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)",
+    "best_epsilon_choice": "1/t",
+    "part2_summary": {
+      "LinEpsilonGreedy(eps=0.1,lambda=1)": {
+        "mean": 63.19330292833145,
+        "std": 11.988109808719006
+      },
+      "LinEpsilonGreedy(eps=0,lambda=1)": {
+        "mean": 9.874279908925082,
+        "std": 33.303838332319046
+      },
+      "LinTS(prior_precision=1,delta=0.2)": {
+        "mean": 32.263270839573195,
+        "std": 10.342468154367598
+      },
+      "LinUCB(alpha=1,lambda=1,delta=0.2)": {
+        "mean": 45.25893592647332,
+        "std": 13.263283094760604
+      },
+      "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": {
+        "mean": 18.610475844228958,
+        "std": 62.80821764089518
+      }
+    },
+    "part3_summary": {
+      "LinTS(prior_precision=1,delta=0.2)": {
+        "mean": 34.53871536310514,
+        "std": 9.666474962267905
+      },
+      "LinUCB(alpha=1,lambda=1,delta=0.2)": {
+        "mean": 36.20641864875001,
+        "std": 5.793795498120119
+      },
+      "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": {
+        "mean": 80.1805794460659,
+        "std": 134.96179293046404
+      },
+      "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": {
+        "mean": 25.81693149457069,
+        "std": 8.991813937555362
+      }
+    },
+    "part4_linear_summary": {
+      "LinTS(prior_precision=1,delta=0.2)": {
+        "mean": 39.776761553521666,
+        "std": 8.84535659863174
+      },
+      "LinUCB(alpha=1,lambda=1,delta=0.2)": {
+        "mean": 60.98589204145844,
+        "std": 16.038266103191486
+      },
+      "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": {
+        "mean": 105.16950040090487,
+        "std": 164.6274702424538
+      },
+      "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": {
+        "mean": 44.13790304668494,
+        "std": 13.879158175100931
+      }
+    },
+    "logistic_summary": {
+      "LinTS(prior_precision=1,delta=0.2)": {
+        "mean": 34.52658226133933,
+        "std": 6.13324314543759
+      },
+      "LinUCB(alpha=1,lambda=1,delta=0.2)": {
+        "mean": 45.969308273267494,
+        "std": 1.9811895032311184
+      },
+      "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": {
+        "mean": 95.0037209489262,
+        "std": 57.1064339254272
+      },
+      "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": {
+        "mean": 43.62759315182865,
+        "std": 30.208326275512096
+      }
+    },
+    "quadratic_summary": {
+      "LinTS(prior_precision=1,delta=0.2)": {
+        "mean": 513.6156928934612,
+        "std": 556.6645666581113
+      },
+      "LinUCB(alpha=1,lambda=1,delta=0.2)": {
+        "mean": 43.52251913865162,
+        "std": 17.284393659063518
+      },
+      "EpsilonLinTS(eps=1/t,prior_precision=1,delta=0.2)": {
+        "mean": 1783.0719286308674,
+        "std": 547.183232652779
+      },
+      "LMCTS(LinearModel,lr=0.1,beta_inv=0.01,sigma=1,wd=1,batch=None,iters=1)": {
+        "mean": 1924.014026618864,
+        "std": 501.5934585787291
+      }
+    },
+    "quadratic_neural_summary": {
+      "NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)": {
+        "mean": 97.80788337957593,
+        "std": 55.25794702469316
+      },
+      "NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)": {
+        "mean": 58.262441534326456,
+        "std": 36.98080470189508
+      },
+      "NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)": {
+        "mean": 181.78488656076033,
+        "std": 310.48950816738704
+      },
+      "NeuralLMCTS(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "mean": 88.8342875438295,
+        "std": 43.569101156155874
+      }
+    },
+    "lmcts_configurations": {
+      "reference": {
+        "lr": 0.01,
+        "beta_inv": 0.01,
+        "num_iter": 5
+      },
+      "lower_noise": {
+        "lr": 0.01,
+        "beta_inv": 0.001,
+        "num_iter": 5
+      },
+      "smaller_step": {
+        "lr": 0.003,
+        "beta_inv": 0.01,
+        "num_iter": 5
+      },
+      "more_updates": {
+        "lr": 0.01,
+        "beta_inv": 0.01,
+        "num_iter": 10
+      }
+    },
+    "configuration_by_agent_name": {
+      "reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "lr": 0.01,
+        "beta_inv": 0.01,
+        "num_iter": 5
+      },
+      "lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "lr": 0.01,
+        "beta_inv": 0.001,
+        "num_iter": 5
+      },
+      "smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "lr": 0.003,
+        "beta_inv": 0.01,
+        "num_iter": 5
+      },
+      "more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10)": {
+        "lr": 0.01,
+        "beta_inv": 0.01,
+        "num_iter": 10
+      }
+    },
+    "shuttle_tuning_summary": {
+      "reference(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "mean": 352.7,
+        "std": 47.74713487622989
+      },
+      "lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "mean": 316.9,
+        "std": 151.40706720625693
+      },
+      "smaller_step(lr=0.003,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "mean": 375.5,
+        "std": 128.20404743134196
+      },
+      "more_updates(lr=0.01,beta_inv=0.01,sigma=1,wd=0.01,batch=64,steps=10)": {
+        "mean": 361.1,
+        "std": 35.2812509226454
+      }
+    },
+    "best_lmcts_name": "lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)",
+    "best_lmcts_configuration": {
+      "lr": 0.01,
+      "beta_inv": 0.001,
+      "num_iter": 5
+    },
+    "shuttle_summary": {
+      "NeuralEpsGreedy(eps=0.1,lr=0.01,batch=64,steps=5)": {
+        "mean": 364.8,
+        "std": 84.00105819439287
+      },
+      "NeuralTS(nu=1,reg=1,lr=0.01,batch=64,steps=5)": {
+        "mean": 327.7,
+        "std": 51.85460442429389
+      },
+      "NeuralUCB(nu=1,reg=1,lr=0.01,batch=64,steps=5)": {
+        "mean": 756.5,
+        "std": 275.0491875202608
+      },
+      "NeuralLMCTS(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)": {
+        "mean": 468.1,
+        "std": 253.10272398551717
+      }
+    }
+  }
+}

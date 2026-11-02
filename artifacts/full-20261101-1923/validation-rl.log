@@ -1,0 +1,42 @@
+PASS structure: 43 code cells parse; eight headings, English content, model/profile literals preserved
+PASS linear algorithms: ridge/inverse updates, action rules, posterior sampling, one-based epsilon, resets and names
+PASS LLM runner logic: sample means/UCB, medical ridge updates, runner shapes, seeded independence and fresh per-round shared rewards
+PASS CPU PyTorch/supporting code: CPU model/optimizer ownership, dtype conversion, gradients/precision, resets, 63-input factory integration, collector bounds, fair RNG streams and UCI reset
+Validation used definitions and tiny synthetic examples only; no full experiment, model, or dataset was loaded.
+PASS parts1-6
+PASS 7a
+PASS 7b
+{
+  "passed": true,
+  "all_phases_validated": true,
+  "checked_at_utc": "2026-11-02T14:01:41.890994+00:00",
+  "phases": {
+    "parts1-6": {
+      "comparisons": 10,
+      "best_epsilon": "1/t",
+      "best_lmcts": "lower_noise(lr=0.01,beta_inv=0.001,sigma=1,wd=0.01,batch=64,steps=5)",
+      "passed": true,
+      "executed_code_cells": 24,
+      "figure_pairs": 10
+    },
+    "7a": {
+      "profiles_or_roles": 2,
+      "policies": 4,
+      "N": 3,
+      "T": 1000,
+      "passed": true,
+      "executed_code_cells": 10,
+      "figure_pairs": 4
+    },
+    "7b": {
+      "profiles_or_roles": 2,
+      "policies": 3,
+      "N": 3,
+      "T": 1000,
+      "passed": true,
+      "executed_code_cells": 9,
+      "figure_pairs": 2
+    }
+  },
+  "combined_executed_code_cells": 43
+}

@@ -1,0 +1,118 @@
+{
+  "run_id": "full-20261101-1923",
+  "state": "complete",
+  "source_commit": "13f4e56dea345669e56e07da1dc06c2d2ea3f5ac",
+  "slurm": {
+    "job_id": "60876090",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "02:01:18",
+    "account": "scavenger-h200",
+    "partition": "scavenger-h200",
+    "gpu": "h200:1",
+    "cpus": 8,
+    "memory": "64G",
+    "time_limit": "12:00:00"
+  },
+  "environment": {
+    "name": "RL",
+    "python": "3.11.18",
+    "packages": {
+      "torch": "2.10.0+cu128",
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "transformers": "5.3.0",
+      "datasets": "4.8.5",
+      "nbclient": "0.11.0",
+      "nbformat": "5.11.1",
+      "ipykernel": "7.4.0"
+    }
+  },
+  "phase_order": [
+    "parts1-6",
+    "7a",
+    "7b"
+  ],
+  "phase_times": {
+    "parts1-6": {
+      "started_at": "2026-11-02T00:23:55.265333+00:00",
+      "completed_at": "2026-11-02T01:12:15.721928+00:00",
+      "source_fingerprint": "55ad0f58aee59e2fa9cef182477e11582e04ab151700af42a05e5c83c93941ef"
+    },
+    "7a": {
+      "started_at": "2026-11-02T01:12:23.975416+00:00",
+      "completed_at": "2026-11-02T01:45:23.872164+00:00",
+      "source_fingerprint": "32b6082441ea55ad323657ffc0d3685e0ba452af39fe5f9498ee616f8dd232bf"
+    },
+    "7b": {
+      "started_at": "2026-11-02T01:45:32.440509+00:00",
+      "completed_at": "2026-11-02T02:24:50.951628+00:00",
+      "source_fingerprint": "842e558951bbc33647761e16a5c33dca0a212f71da6f1cea1db9ef45771e1174"
+    }
+  },
+  "original_parameters": {
+    "T": 1000,
+    "N": {
+      "Parts 1–2": 50,
+      "Parts 3–4": 5,
+      "Parts 5–6": 10,
+      "Part 7A, each role": 3,
+      "Part 7B, each profile": 3
+    }
+  },
+  "pinned_models": {
+    "movie_model_id": "Qwen/Qwen3.5-0.8B",
+    "movie_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "patient_model_id": "Qwen/Qwen3.5-0.8B",
+    "patient_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "encoder_model_id": "Qwen/Qwen2.5-0.5B",
+    "encoder_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+  },
+  "medical_dataset": {
+    "id": "TsinghuaC3I/UltraMedical-Preference",
+    "revision": "761eb7935310ba662a96d93c5af342e5269d5759",
+    "questions": 5,
+    "unique_responses": 17,
+    "feature_dimension": 17
+  },
+  "llm_telemetry": {
+    "7a": {
+      "movie_reward": {
+        "successful_calls": 18479,
+        "failed_calls": 0,
+        "seconds": 1909.1969239758328
+      }
+    },
+    "7b": {
+      "patient_reward": {
+        "successful_calls": 12757,
+        "failed_calls": 0,
+        "seconds": 2267.8530270531774
+      }
+    }
+  },
+  "outputs": {
+    "executed_code_cells": 43,
+    "png_figures": 16,
+    "pdf_figures": 16,
+    "analysis_sections": 8
+  },
+  "archive_notes": [
+    "Raw phase notebooks are execution snapshots; the root notebook contains all outputs and final English analyses.",
+    "Absolute project and Conda paths in public output text are normalized; numerical arrays and code sources are unchanged.",
+    "Model caches, full raw datasets, credentials, SSH configurations, and private recovery checkpoints are excluded."
+  ],
+  "validation": {
+    "full_saved_results": "passed",
+    "final_notebook_RL_numpy_and_cpu_pytorch": "passed",
+    "local_structure_and_numpy": "passed",
+    "local_pytorch": "skipped; dependencies unavailable locally, verified in DCC RL",
+    "log_files": [
+      "validation-rl.log",
+      "validation-local.log"
+    ]
+  }
+}

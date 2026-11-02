@@ -1,0 +1,23 @@
+{
+  "phase": "7a",
+  "state": "complete",
+  "started_at": "2026-11-02T01:12:23.975416+00:00",
+  "source_fingerprint": "32b6082441ea55ad323657ffc0d3685e0ba452af39fe5f9498ee616f8dd232bf",
+  "completed_cells": [
+    42,
+    44,
+    45,
+    48,
+    50,
+    52,
+    53,
+    55,
+    56,
+    57
+  ],
+  "N_T_policy": "Original notebook defaults; no overrides.",
+  "current_cell": 57,
+  "current_cell_id": "movie-role-b-selections",
+  "updated_at": "2026-11-02T01:45:23.861346+00:00",
+  "completed_at": "2026-11-02T01:45:23.872164+00:00"
+}
