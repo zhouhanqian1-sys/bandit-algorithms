@@ -1,17 +1,46 @@
 {
   "passed": true,
-  "checked_at_utc": "2026-11-04T00:38:41.876087+00:00",
-  "report_sha256": "d746e4b6046c5109027fcfcf4d3f044196c13113aac678bdca2518e94dde2d3e",
-  "pages": 16,
+  "checked_at_utc": "2026-11-04T00:58:38.936689+00:00",
+  "report_sha256": "2617bbd41a12385514ba49598714c4c618de3ca6a735664696aba5e0fa63ea75",
+  "pages": 15,
   "assignment_sections": 8,
   "vector_figures_verified_against_originals": 16,
   "algorithm_results_mean_and_sample_sd_pairs_verified": 55,
-  "analysis_paragraphs_preserved_from_notebook": 13,
   "all_T_equal_1000": true,
-  "page_numbers_and_section_map_checked": true,
-  "sequential_figure_numbers": true,
+  "latex_compilation_passes": 3,
+  "overfull_boxes": 0,
+  "oversize_floats": 0,
+  "undefined_references": 0,
   "no_missing_or_null_glyphs": true,
   "no_placeholders_or_non_English_text": true,
+  "visual_review": {
+    "passed": true,
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "render_dpi": 110,
+    "checks": [
+      "Plain article typography and three-line tables",
+      "Correct math glyphs and readable chart labels",
+      "No clipped text, overlapping tables, or oversized floats",
+      "Consistent captions, numbering, and section transitions"
+    ],
+    "format": "LaTeX article; black text, standard serif font, simple page numbers"
+  },
   "page_boundary_checks": [
     {
       "page": 1,
@@ -72,44 +101,6 @@
     {
       "page": 15,
       "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 16,
-      "characters_outside_safe_page_bounds": 0
     }
-  ],
-  "visual_review": {
-    "passed": true,
-    "pages_reviewed": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16
-    ],
-    "render_dpi": 110,
-    "checks": [
-      "Page sequence and section transitions",
-      "Headers, footers, and page numbers",
-      "Chart labels and legends",
-      "Table widths and paragraph spacing",
-      "Formula glyphs",
-      "No visible clipping or overlap"
-    ],
-    "repairs": [
-      "Replaced unsupported gradient glyph with grad MSE",
-      "Numbered all figures in report reading order"
-    ]
-  }
+  ]
 }

@@ -1,0 +1,128 @@
+{
+  "format": "Plain LaTeX article; black text and booktabs tables; no cover page, colored table fills, or decorative headers",
+  "writing_reference": "https://github.com/Yuan1z0825/nature-skills/blob/main/skills/nature-polishing/SKILL.md",
+  "routing": {
+    "paper_type": "algorithmic coursework",
+    "sections": [
+      "methods",
+      "results",
+      "discussion"
+    ],
+    "language": "en",
+    "journal": "generic"
+  },
+  "terminology_ledger": {
+    "cumulative pseudo-regret": "Parts 1-6; lower is better",
+    "cumulative reward": "Parts 7A-7B; higher is better",
+    "sample standard deviation": "Across independent runs, ddof=1",
+    "empirical 10th-90th percentiles": "Descriptive curve bands, not confidence intervals",
+    "online accuracy": "Shuttle correct-choice proportion, not held-out accuracy",
+    "LMCTS": "Linear model in Parts 3-4",
+    "NeuralLMCTS": "50-unit neural model in Parts 5-6"
+  },
+  "result_allocation": {
+    "1": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    },
+    "2": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    },
+    "3": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    },
+    "4": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    },
+    "5": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    },
+    "6": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    },
+    "7A": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    },
+    "7B": {
+      "tables": "main report",
+      "figures": "main report",
+      "discussion": "main report",
+      "full provenance": "repository metadata"
+    }
+  },
+  "changes": [
+    "Replaced colored document styling with a standard article layout",
+    "Shortened repeated ranking and uncertainty statements while preserving task-specific limits",
+    "Kept mean and sample SD tables and all original figures",
+    "Removed duplicate medical per-round mean columns; cumulative totals and stated gains preserve the findings",
+    "Moved hashes, execution audit detail, and page map from narrative to repository metadata",
+    "Kept policy randomness separate from environment randomness in the setup description",
+    "Recorded the final 1/sqrt(2) feature scaling in Part 7B",
+    "Used a fresh page for Part 7A and prevented broken-word page endings"
+  ],
+  "discussion_word_counts": {
+    "1": {
+      "before": 100,
+      "after": 77
+    },
+    "2": {
+      "before": 107,
+      "after": 132
+    },
+    "3": {
+      "before": 103,
+      "after": 85
+    },
+    "4": {
+      "before": 107,
+      "after": 99
+    },
+    "5": {
+      "before": 112,
+      "after": 117
+    },
+    "6": {
+      "before": 127,
+      "after": 128
+    },
+    "7A": {
+      "before": 144,
+      "after": 125
+    },
+    "7B": {
+      "before": 158,
+      "after": 117
+    }
+  },
+  "statistics_location": "Full final mean and sample SD in tables; selected comparisons and unfavorable runs in prose; no inferential tests introduced",
+  "claim_repetition": "Methods state design; tables report full statistics; prose interprets selected findings; one report-wide uncertainty note",
+  "experiment_data_changed": false,
+  "final_pages": 15,
+  "final_checks": {
+    "all_eight_parts_present": true,
+    "original_16_figures_unchanged": true,
+    "mean_and_sample_sd_pairs_verified": 55,
+    "source_notebook_unchanged": true,
+    "latex_compile_warnings": 0
+  }
+}

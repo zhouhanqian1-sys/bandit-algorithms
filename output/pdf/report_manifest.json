@@ -1,7 +1,13 @@
 {
   "report": "output/pdf/BIOSTAT825_HW1_Report.pdf",
-  "pages": 16,
-  "report_sha256": "d746e4b6046c5109027fcfcf4d3f044196c13113aac678bdca2518e94dde2d3e",
+  "report_sha256": "2617bbd41a12385514ba49598714c4c618de3ca6a735664696aba5e0fa63ea75",
+  "format": "LaTeX article",
+  "pages": 15,
+  "source_tex": "report/BIOSTAT825_HW1_Report.tex",
+  "source_tex_sha256": "aa39ca27cb8dbf0130ffd33074b4f98e9ae62a94c140abaae8cdcfd4a05360ae",
+  "source_notebook": "Experiments.ipynb",
+  "source_notebook_sha256": "7214d16a8de23fbc3cd44d7a3ca1c40d8a22f4bc65aa85d0c17de19b8e9a64c9",
+  "source_execution_commit": "13f4e56dea345669e56e07da1dc06c2d2ea3f5ac",
   "assignment_sections": [
     "1",
     "2",
@@ -12,166 +18,157 @@
     "7A",
     "7B"
   ],
-  "source_notebook": "Experiments.ipynb",
-  "source_notebook_sha256": "7214d16a8de23fbc3cd44d7a3ca1c40d8a22f4bc65aa85d0c17de19b8e9a64c9",
-  "source_execution_commit": "13f4e56dea345669e56e07da1dc06c2d2ea3f5ac",
-  "original_T": 1000,
   "page_starts": [
     {
-      "title": "Part 1. Linear contextual bandits",
+      "part": "1",
+      "page": 1
+    },
+    {
+      "part": "2",
       "page": 2
     },
     {
-      "title": "Part 2. Choosing epsilon for LinTS",
-      "page": 3
-    },
-    {
-      "title": "Part 2. Fresh baseline comparison",
+      "part": "3",
       "page": 4
     },
     {
-      "title": "Part 3. Linear-model LMCTS",
+      "part": "4",
       "page": 5
     },
     {
-      "title": "Part 4. Linear and logistic rewards",
-      "page": 6
-    },
-    {
-      "title": "Part 4. Quadratic rewards and comparison",
-      "page": 7
-    },
-    {
-      "title": "Part 5. Neural policies for quadratic rewards",
+      "part": "5",
       "page": 8
     },
     {
-      "title": "Part 6. LMCTS tuning on shuttle",
+      "part": "6",
       "page": 9
     },
     {
-      "title": "Part 6. Fresh neural-policy comparison",
-      "page": 10
-    },
-    {
-      "title": "Part 7A. LLM movie recommendations",
+      "part": "7A",
       "page": 11
     },
     {
-      "title": "Part 7A. Rewards and Role A selections",
-      "page": 12
-    },
-    {
-      "title": "Part 7A. Role B selections and variability",
-      "page": 13
-    },
-    {
-      "title": "Part 7B. Contextual LLM patient preferences",
+      "part": "7B",
       "page": 14
-    },
-    {
-      "title": "Part 7B. Profile B and interpretation",
-      "page": 15
-    },
-    {
-      "title": "Reproducibility and modeling assumptions",
-      "page": 16
     }
   ],
+  "original_T": 1000,
+  "original_N": {
+    "1-2": 50,
+    "3-4": 5,
+    "5-6": 10,
+    "7A-7B": 3
+  },
   "vector_figures": [
     {
       "number": 1,
       "page": 2,
+      "label": "fig:part1",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_008_figure_001.pdf",
       "sha256": "23c494d9b3c373ffcd0213921a2d5bd287b12d1e80f8eef9b8447f38c9a93e9d"
     },
     {
       "number": 2,
       "page": 3,
+      "label": "fig:epsilon",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_012_figure_002.pdf",
       "sha256": "7a94bb7345a27c49f55ebcee39109e462fed553f57cd0e43649ccc414c14262e"
     },
     {
       "number": 3,
       "page": 4,
+      "label": "fig:part2",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_012_figure_003.pdf",
       "sha256": "a138efd60ec86950391e936a7f6879dbc51bc726e957e48d3250811db87858b2"
     },
     {
       "number": 4,
       "page": 5,
+      "label": "fig:part3",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_019_figure_004.pdf",
       "sha256": "c470ee960ec93822d12fd55cf0afc081e98b04ba4484de2dc2a0bb66eac7a473"
     },
     {
       "number": 5,
       "page": 6,
+      "label": "fig:part4-linear",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_022_figure_005.pdf",
       "sha256": "5819e47b347906976968ab555153be5786f5ba9418734287504de9de33319a0a"
     },
     {
       "number": 6,
-      "page": 6,
+      "page": 7,
+      "label": "fig:part4-logistic",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_023_figure_006.pdf",
       "sha256": "d3be633c42f06f8a9a4ff613e385418e137bcca497da47c01c020e336ef93c64"
     },
     {
       "number": 7,
       "page": 7,
+      "label": "fig:part4-quadratic",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_024_figure_007.pdf",
       "sha256": "6373511e2835a776d88b45eaa41d93c0303a82f3e653e21ae876fde463423e3a"
     },
     {
       "number": 8,
       "page": 8,
+      "label": "fig:part5",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_034_figure_008.pdf",
       "sha256": "c39a86c79ee977d9e3630d2e699434d169159976edcd35856ed5e21c13deb4e6"
     },
     {
       "number": 9,
       "page": 9,
+      "label": "fig:shuttle-tuning",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_038_figure_009.pdf",
       "sha256": "99356277f2c3a79e548e0f2b2aa9622372e9c8f726afa053dac37bab0fb93f64"
     },
     {
       "number": 10,
       "page": 10,
+      "label": "fig:shuttle-final",
       "source": "artifacts/full-20261101-1923/parts1-6/figures/cell_038_figure_010.pdf",
       "sha256": "98e04b8a27ec76258983ae77d6617d9992c8f0c77a90d1d7874a14ec8beb7327"
     },
     {
       "number": 11,
       "page": 11,
+      "label": "fig:movie-a",
       "source": "artifacts/full-20261101-1923/7a/figures/cell_052_figure_001.pdf",
       "sha256": "b1fcf6b82b251f6b9ed0853ab0db8594ad4376d3bd6ccf123365d1c70405c735"
     },
     {
       "number": 12,
-      "page": 11,
+      "page": 12,
+      "label": "fig:movie-b",
       "source": "artifacts/full-20261101-1923/7a/figures/cell_056_figure_003.pdf",
       "sha256": "eccb2385a878ef9d7b43353d63d70081d7f8d20acdaa5c250501f753d49e0674"
     },
     {
       "number": 13,
-      "page": 12,
+      "page": 13,
+      "label": "fig:movie-count-a",
       "source": "artifacts/full-20261101-1923/7a/figures/cell_053_figure_002.pdf",
       "sha256": "477b0d3d7d3f03a94d9f96df28f2107e2a84ae90932f1f7834fcad4addc11302"
     },
     {
       "number": 14,
       "page": 13,
+      "label": "fig:movie-count-b",
       "source": "artifacts/full-20261101-1923/7a/figures/cell_057_figure_004.pdf",
       "sha256": "af4b5fe1836820e0a262449ec0601472673a005e9f04fbdd57345755f3029163"
     },
     {
       "number": 15,
-      "page": 14,
+      "page": 15,
+      "label": "fig:medical-a",
       "source": "artifacts/full-20261101-1923/7b/figures/cell_072_figure_001.pdf",
       "sha256": "e3cf6fe117d5cc1309f999b8a953a6532e0296b8225ca469d533bd2c3012f444"
     },
     {
       "number": 16,
       "page": 15,
+      "label": "fig:medical-b",
       "source": "artifacts/full-20261101-1923/7b/figures/cell_075_figure_002.pdf",
       "sha256": "d117482ba3d1cc094f6d5b2c4924b336f16646ebdf5c3f4fe001357c036f2a6a"
     }
