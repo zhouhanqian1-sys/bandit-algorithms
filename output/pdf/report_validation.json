@@ -1,7 +1,7 @@
 {
   "passed": true,
-  "checked_at_utc": "2026-11-04T00:58:38.936689+00:00",
-  "report_sha256": "2617bbd41a12385514ba49598714c4c618de3ca6a735664696aba5e0fa63ea75",
+  "checked_at_utc": "2026-11-04T01:09:05.727383+00:00",
+  "report_sha256": "a41973bea3f958d1c6481ccf09947f8b6309ca5360e783120556aab9ac2af7fb",
   "pages": 15,
   "assignment_sections": 8,
   "vector_figures_verified_against_originals": 16,
@@ -16,91 +16,19 @@
   "visual_review": {
     "passed": true,
     "pages_reviewed": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15
+      1
     ],
     "render_dpi": 110,
     "checks": [
-      "Plain article typography and three-line tables",
-      "Correct math glyphs and readable chart labels",
-      "No clipped text, overlapping tables, or oversized floats",
-      "Consistent captions, numbering, and section transitions"
-    ],
-    "format": "LaTeX article; black text, standard serif font, simple page numbers"
+      "Updated author centered correctly on the title block",
+      "PDF author metadata matches visible author",
+      "Remaining page text identical to the previously reviewed 15-page report"
+    ]
   },
-  "page_boundary_checks": [
-    {
-      "page": 1,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 2,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 3,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 4,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 5,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 6,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 7,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 8,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 9,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 10,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 11,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 12,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 13,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 14,
-      "characters_outside_safe_page_bounds": 0
-    },
-    {
-      "page": 15,
-      "characters_outside_safe_page_bounds": 0
-    }
-  ]
+  "author_update_verified": {
+    "visible_author": "Zhouhan Qian",
+    "pdf_metadata_author": "Zhouhan Qian",
+    "other_text_unchanged": true,
+    "page_count_unchanged": true
+  }
 }

@@ -1,10 +1,10 @@
 {
   "report": "output/pdf/BIOSTAT825_HW1_Report.pdf",
-  "report_sha256": "2617bbd41a12385514ba49598714c4c618de3ca6a735664696aba5e0fa63ea75",
+  "report_sha256": "a41973bea3f958d1c6481ccf09947f8b6309ca5360e783120556aab9ac2af7fb",
   "format": "LaTeX article",
   "pages": 15,
   "source_tex": "report/BIOSTAT825_HW1_Report.tex",
-  "source_tex_sha256": "aa39ca27cb8dbf0130ffd33074b4f98e9ae62a94c140abaae8cdcfd4a05360ae",
+  "source_tex_sha256": "db97b567fcc99e6803253339c905ed589b29a72308dea050424489988c6bd7cf",
   "source_notebook": "Experiments.ipynb",
   "source_notebook_sha256": "7214d16a8de23fbc3cd44d7a3ca1c40d8a22f4bc65aa85d0c17de19b8e9a64c9",
   "source_execution_commit": "13f4e56dea345669e56e07da1dc06c2d2ea3f5ac",
