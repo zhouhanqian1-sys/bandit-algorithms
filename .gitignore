@@ -19,3 +19,6 @@ slurm-*.out
 *.pem
 *.key
 
+# PDF authoring and rendering intermediates
+tmp/pdfs/
+

@@ -2,6 +2,10 @@
 
 The completed [Experiments.ipynb](Experiments.ipynb) includes all eight assignment sections, recorded outputs, and English result analyses. The original horizons and replication counts were used on one Duke DCC H200 in the existing `RL` environment, in the order Parts 1–6, 7A, and 7B. Slurm job `60876090` completed successfully in 2:01:18 using account and partition `scavenger-h200`.
 
+For submission, upload the [English experimental report (PDF)](output/pdf/BIOSTAT825_HW1_Report.pdf) to Gradescope and [Experiments.ipynb](Experiments.ipynb) to the Canvas Assignment section. The 16-page report covers Parts 1–6, 7A, and 7B, with all 16 original vector figures, numerical tables, methods, and English discussion. Its first page maps assignment sections to report pages. The instructor does not require LaTeX source files.
+
+The report is generated from the completed notebook and saved chart PDFs by [scripts/build_submission_pdf.py](scripts/build_submission_pdf.py), using ReportLab and pypdf without rerunning experiments. See [report_manifest.json](output/pdf/report_manifest.json) for source hashes and [report_validation.json](output/pdf/report_validation.json) for the final content and layout checks.
+
 The [full result archive](artifacts/full-20261101-1923/) contains 16 PNG/PDF figure pairs, numerical NPZ arrays, JSON summaries, phase logs, raw execution snapshots, and the combined analyzed notebook. See the [validation report](artifacts/full-20261101-1923/validation-report.json) and [run metadata](artifacts/full-20261101-1923/run-metadata.json) for exact parameters, pinned revisions, environment versions, and provenance. Experiment code was executed from commit `13f4e56dea345669e56e07da1dc06c2d2ea3f5ac`; subsequent changes add validation, recorded outputs, and interpretation.
 
 To check saved results without rerunning the experiments:
